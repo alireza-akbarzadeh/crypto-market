@@ -1,0 +1,54 @@
+.root {
+  .form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .coinCard {
+      margin-bottom: 32px;
+      background-color: #00000006;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      .imageWrapper {
+        display: flex;
+        margin-inline-end: 8px;
+      }
+      .name {
+        flex: 1;
+      }
+    }
+    .buttonGroup {
+      margin-bottom: 40px;
+    }
+    .buttonWrapper {
+      order: 3;
+      display: flex;
+      margin: auto -4px 0;
+      > * {
+        padding: 0 4px;
+        &:first-child {
+          flex-shrink: 0;
+        }
+        &:last-child {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 599px) {
+  .root {
+    .form {
+      .coinCard {
+        background-color: transparent;
+        padding: 10px 0;
+      }
+      .buttonGroup {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        background-color: transparent;
+      }
+    }
+  }
+}

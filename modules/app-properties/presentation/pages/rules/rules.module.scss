@@ -1,0 +1,68 @@
+.root {
+  min-height: 100vh;
+  padding: 0 0 32px;
+  .paper {
+    position: relative;
+    padding: 12px;
+    .headImageWrapper {
+      margin: 0 auto 0;
+      width: 62%;
+      max-width: 300px;
+    }
+    .mainTitle {
+      font-size: var(--font-h3);
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 60px;
+      margin-top: 40px;
+    }
+    .section {
+      margin-bottom: 32px;
+      .title {
+        font-size: var(--font-h6);
+        margin-bottom: 16px;
+        font-weight: 700;
+      }
+      p {
+        margin-bottom: 8px;
+        text-align: justify;
+        text-indent: 4ch;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .root {
+    background-color: var(--background-secondary);
+    padding: 72px 0;
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--background-secondary)
+        url("../../../../../public/images/live-price-bg.png") no-repeat center;
+      background-size: cover;
+    }
+    .pageHeader {
+      box-shadow: none;
+      background-color: var(--background-secondary);
+    }
+    .paper {
+      background-color: var(--background-paper);
+
+      box-shadow: 0px 40px 72px rgba(179, 179, 179, 0.08);
+      border-radius: 16px;
+      padding: 56px 110px;
+
+      .section {
+        .title {
+          font-size: var(--font-h5);
+        }
+      }
+    }
+  }
+}

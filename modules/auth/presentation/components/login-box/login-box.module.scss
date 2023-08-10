@@ -1,0 +1,22 @@
+.root {
+  padding: 24px 0;
+  margin-bottom: 4px;
+  .title {
+    font-size: var(--font-h6);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .description {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    span {
+      color: var(--text-primary);
+    }
+  }
+  .btn {
+    max-width: 100%;
+    width: 200px;
+    margin: auto;
+    display: block;
+  }
+}

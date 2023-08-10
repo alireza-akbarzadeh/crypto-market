@@ -1,0 +1,111 @@
+.bluePaper {
+  background: url(../../../../../public/images/downlaod-mask.png),
+    linear-gradient(109.28deg, #3571d1 14.16%, #0043b0 84.59%);
+  border-radius: 16px;
+  color: var(--primary-contrastText);
+  padding: 40px 12px;
+  margin: 45vw 0 0;
+  .phone {
+    max-width: 264px;
+    width: 80%;
+    margin: calc(-41vw - 40px) auto 24px;
+    display: flex;
+    align-items: center;
+    > * {
+      width: 130%;
+      margin: -15% !important;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      margin-bottom: 8px;
+    }
+    .subTitle {
+    }
+    .list {
+      display: none;
+      opacity: 0.8;
+      margin: auto 0;
+      padding: 16px 0;
+      list-style: none;
+      li {
+        padding: 4px 0;
+        text-align: center;
+        * {
+          color: var(--primary-contrastText);
+        }
+      }
+    }
+    .downloadBtnContainer {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 420px;
+      justify-content: center;
+      .downloadBtn {
+        background-color: #fff;
+        min-width: 190px;
+        text-align: start;
+        display: flex;
+        padding: 8px 20px;
+        border-radius: 8px;
+        margin: 8px;
+        color: #000;
+        align-items: center;
+        .info {
+          flex: 1;
+          .title {
+            color: #000000b3;
+            margin-bottom: 4px;
+            font-size: var(--font-body2);
+          }
+          .secondary {
+            color: #000;
+            font-size: var(--font-h6);
+            font-weight: 700;
+          }
+        }
+        .icon {
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .bluePaper {
+    padding: 48px;
+    margin: 0;
+    margin-top: 64px;
+    display: flex;
+
+    .phone {
+      margin-top: 0;
+      width: 40%;
+      order: 1;
+      margin: -88px 0;
+    }
+    .content {
+      flex: 1;
+      align-items: stretch;
+      margin-inline-end: 16px;
+
+      .list {
+        display: block;
+        padding-inline-start: 4ch;
+        list-style: unset;
+        li {
+          text-align: start;
+        }
+      }
+      .downloadBtnContainer {
+        justify-content: flex-start;
+        margin: -8px;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+}

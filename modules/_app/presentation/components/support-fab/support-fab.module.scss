@@ -1,0 +1,12 @@
+.supportButton {
+  position: fixed !important;
+  bottom: 32px;
+  left: 48px;
+  .supportIcon {
+    transform: translateY(1px);
+    font-size: 22px;
+  }
+  @media (max-width: 899px) {
+    display: none !important;
+  }
+}

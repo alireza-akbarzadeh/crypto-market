@@ -1,0 +1,44 @@
+// NOT USER
+.root {
+  .container {
+    .paper {
+      .imageWrapper {
+        width: 200px;
+        margin: 0 auto 22px;
+      }
+      .title {
+        text-align: center;
+        margin-bottom: 22px;
+        font-weight: 700;
+      }
+      .description {
+        text-align: justify;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    background-color: var(--background-secondary);
+    min-height: 100vh;
+    .container {
+      padding-top: 80px;
+      padding-bottom: 40px;
+      .paper {
+        background-color: var(--background-paper);
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: var(--shadow-1);
+        button {
+          max-width: 230px;
+          display: block;
+          margin: auto;
+        }
+        .description {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.root {
+  margin-bottom: 8px;
+  .header {
+    display: flex;
+    padding: 16px 12px;
+    width: 100%;
+    .mainTitle {
+      margin-inline-end: 8px;
+    }
+    .collapseIcon {
+      margin-inline-start: auto;
+      font-size: 0.714285714285714rem;
+      transition: all 0.3s ease-in-out;
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .list {
+    padding: 0;
+    margin: 0;
+    > li {
+      padding: 16px;
+      .more {
+        margin-inline-start: auto;
+      }
+    }
+  }
+}

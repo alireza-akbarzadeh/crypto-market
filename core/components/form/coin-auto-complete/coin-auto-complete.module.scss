@@ -1,0 +1,58 @@
+div.root .inputRoot {
+  padding-top: 0;
+  padding-bottom: 0;
+  input {
+    text-align: center;
+  }
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  margin: 0px 8px;
+  border-radius: 4px;
+  position: relative;
+  overflow: visible !important;
+  .imageWrapper {
+    display: flex;
+  }
+  .title {
+    flex: 1 1;
+    padding: 0 8px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // font-weight: 500;
+  }
+  .shortName {
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid var(--divider);
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+@media (min-width: 600px) {
+  .listItem {
+    margin: 16px 8px;
+    &::after {
+      bottom: -8px;
+    }
+  }
+}

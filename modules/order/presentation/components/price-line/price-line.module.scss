@@ -1,0 +1,17 @@
+.priceLine {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  .divider {
+    flex-grow: 1;
+    margin: 0 8px;
+    border-bottom: 1px dashed transparent;
+    cursor: pointer;
+    &.visible {
+      border-bottom-color: var(--divider);
+    }
+  }
+  .secondary {
+    opacity: 0.8;
+  }
+}

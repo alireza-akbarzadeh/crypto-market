@@ -1,0 +1,18 @@
+.root {
+  padding-left: 16px;
+  padding-right: 16px;
+  .menuButton {
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 6%);
+    border-radius: 16px;
+    min-height: 60px;
+    .done {
+      color: var(--success-main);
+    }
+    .pending {
+      color: var(--warning-main);
+    }
+    .icon {
+      min-width: 40px;
+    }
+  }
+}

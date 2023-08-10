@@ -1,0 +1,74 @@
+.root {
+  min-height: 100vh;
+  background-color: var(--background-secondary);
+  .title {
+    margin: 16px 0 12px;
+    font-size: var(--font-h5);
+    font-weight: 500;
+    //  fontWeight={500} color="text.secondary"
+  }
+  .emptyData {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+    font-family: "IRANSansWebFaNum";
+  }
+  .boldText {
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-size: var(--font-h6);
+  }
+  .text {
+    margin-top: 0;
+    color: var(--text-secondary);
+  }
+  .groupList {
+    flex: 1;
+    .currencies {
+      margin-bottom: 20px;
+      font-family: "IRANSansWebFaNum";
+      .weight600 {
+        font-weight: 600;
+      }
+      .notificationList {
+        background-color: var(--background-paper);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        padding-inline-start: 20px;
+        padding-inline-end: 4px;
+      }
+    }
+  }
+  .addButtonWrapper {
+    padding: 32px 0 48px;
+  }
+}
+@media (max-width: 599px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    .title {
+      margin: 16px 0 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      font-size: var(--font-body1);
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+    }
+    .addButtonWrapper {
+      padding: 16px 0 24px;
+      border-top: 1px solid var(--divider);
+      position: fixed;
+      inset: auto 0 0;
+      background-color: var(--background-default);
+    }
+  }
+}

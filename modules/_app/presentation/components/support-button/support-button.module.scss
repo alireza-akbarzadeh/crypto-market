@@ -1,0 +1,13 @@
+.supportBtn {
+  background-color: var(--action-disabledBackground);
+  padding: 4px 8px;
+  border-radius: 20px;
+  svg {
+    font-size: 1.3em;
+    margin-inline-end: 0.5ch;
+  }
+  span {
+    font-size: var(--font-body2);
+    font-weight: 500;
+  }
+}

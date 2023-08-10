@@ -1,0 +1,161 @@
+.root {
+  padding: 66px 0;
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    .icon {
+      color: var(--primary-main);
+      font-size: 2.3em;
+    }
+    div {
+      flex: 1;
+      margin: 0 16px;
+      .title {
+        font-size: var(--font-h6);
+        font-weight: 500;
+      }
+      .subtitle {
+        font-size: var(--font-body2);
+        color: var(--text-secondary);
+      }
+    }
+  }
+
+  .filterSection {
+    display: flex;
+    margin-bottom: 24px;
+    .sort {
+      max-width: 360px;
+      background-color: var(--background-secondary);
+      border: none;
+      :global {
+        .MuiToggleButtonGroup-grouped {
+          color: var(--text-secondary);
+          svg {
+            margin-inline-end: 0.5ch;
+          }
+          &.Mui-selected {
+            background-color: var(--background-paper);
+            color: var(--text-primary);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+  .listWrapper {
+    .list {
+      display: flex;
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex: 1 1 33%;
+        min-width: 0;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--divider);
+        padding: 16px;
+        .cardHeader {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 8px;
+          img {
+            width: 40px;
+          }
+          .category {
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--primary-main);
+            color: var(--primary-main);
+          }
+        }
+        .title {
+          font-weight: 500;
+        }
+        .summery {
+          color: var(--text-secondary);
+          margin-bottom: 32px;
+        }
+        .date {
+          margin-top: auto;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .icon {
+            font-size: inherit;
+            margin-inline-start: 4px;
+          }
+        }
+        .cardFooter {
+          margin-top: auto;
+          display: flex;
+          direction: ltr;
+          // font-family: arial;
+          color: var(--text-secondary);
+          justify-content: space-between;
+          > * {
+            // flex: 1 1 33%;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  [data-theme="dark"] .root {
+    background-color: #4285f20a;
+  }
+  .root .listWrapper {
+    .list {
+      margin: 0 -8px;
+      .card {
+        margin: 0 8px;
+        &:nth-child(n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 899px) {
+  .root {
+    padding: 16px 0;
+    border-top: 16px solid var(--background-secondary);
+    background-color: var(--background-paper);
+    .filterSection .sort {
+      max-width: 400px;
+      margin: 0 auto 24px;
+      border-radius: 8px;
+      :global {
+        .MuiToggleButtonGroup-grouped {
+          border-radius: 8px !important;
+        }
+      }
+    }
+    .listWrapper {
+      overflow: hidden;
+      margin: 0 -12px;
+      .list {
+        overflow: auto;
+        padding-bottom: 16px;
+        margin-bottom: -16px;
+        .card {
+          max-width: 320px;
+          width: 86vw;
+          flex-basis: auto;
+          flex-shrink: 0;
+          margin-inline-start: 16px;
+          &:last-child {
+            margin-inline-end: 16px;
+          }
+        }
+      }
+    }
+  }
+}

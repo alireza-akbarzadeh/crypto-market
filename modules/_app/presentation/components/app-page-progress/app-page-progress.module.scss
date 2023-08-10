@@ -1,0 +1,30 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: var(--primary-main);
+  z-index: 10000;
+  height: 4px;
+  color: var(--primary-main);
+  opacity: 0;
+  width: 0%;
+  &.started {
+    opacity: 1;
+    width: 99%;
+    transition: width 10s cubic-bezier(0.1, 0.05, 0, 1);
+  }
+  &.stopped {
+    opacity: 0;
+    width: 100%;
+    transition: width 0.1s ease-out, opacity 0.5s ease 0.2s;
+  }
+  .glow {
+    opacity: 0.4;
+    box-shadow: 3px 0 8px;
+    height: 100%;
+  }
+}

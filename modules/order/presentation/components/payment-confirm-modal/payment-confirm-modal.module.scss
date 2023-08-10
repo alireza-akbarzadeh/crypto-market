@@ -1,0 +1,64 @@
+.dataContainer {
+  margin-bottom: 32px;
+  .notEnough {
+    color: var(--error-main);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .dataRow {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    .label {
+    }
+    .value {
+      span {
+        color: var(--text-primary);
+        font-weight: 700;
+      }
+    }
+    &.primary {
+      color: var(--primary-main);
+      .value {
+        span {
+          color: var(--primary-main);
+        }
+      }
+    }
+    &.successBox {
+      padding: 8px;
+      color: var(--success-main);
+      border: 1px solid var(--success-light);
+      background-color: var(--success-lighter);
+      border-radius: 8px;
+      align-items: center;
+      .label {
+        font-weight: 700;
+      }
+      .value {
+        font-weight: 500;
+        font-size: var(--font-body2);
+        span {
+          color: var(--success-main);
+          font-size: var(--font-h6);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .dataContainer {
+    margin-bottom: 40px;
+    .notEnough {
+      margin-bottom: 40px;
+    }
+    .dataRow {
+      margin-bottom: 16px;
+      &.successBox {
+        padding: 12px;
+      }
+    }
+  }
+}

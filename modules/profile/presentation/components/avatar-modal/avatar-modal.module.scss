@@ -1,0 +1,34 @@
+.root {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    .gridContainer {
+      .avatarItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .avatarWrapper {
+          border-radius: 50%;
+          .avatar {
+            width: 58px;
+            height: 58px;
+          }
+          &.selected {
+            box-shadow: 0 0 0 2px var(--primary-main);
+            .avatar {
+              background-color: var(--primary-lighter);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    .content {
+      height: calc(80vh - 88px);
+    }
+  }
+}

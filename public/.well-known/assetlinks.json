@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.crypto.app",
+      "sha256_cert_fingerprints": [
+        "3F:25:8E:DA:FE:FA:11:A0:EA:2D:51:8A:01:0C:A3:12:47:7B:A3:65:A0:21:B7:4D:28:A3:51:DB:56:E9:99:76"
+      ]
+    }
+  }
+]

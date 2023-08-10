@@ -1,0 +1,57 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -4px;
+  .container {
+    display: flex;
+    justify-content: center;
+    direction: ltr;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    .inputContainer {
+      margin: 8px 4px 4px;
+      flex: 1;
+      input {
+        box-sizing: border-box;
+        min-width: 48px;
+        text-align: center;
+      }
+      &.fill fieldset {
+        border-color: inherit;
+      }
+    }
+    .errorText {
+      direction: rtl;
+      margin: 3px 4px;
+      position: absolute;
+      top: 100%;
+      right: 0;
+    }
+  }
+  .errorTextMock {
+    margin-bottom: 4px;
+    opacity: 0;
+  }
+}
+@media (max-width: 599px) {
+  .root {
+    .container {
+      width: auto;
+      .inputContainer {
+        flex: auto;
+        input {
+          min-width: 0;
+          width: 48px;
+        }
+        &.fill fieldset {
+        }
+      }
+      .errorText {
+      }
+    }
+    .errorTextMock {
+    }
+  }
+}

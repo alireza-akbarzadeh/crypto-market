@@ -1,0 +1,28 @@
+.name {
+  flex: 1 1 30%;
+}
+.buy {
+  flex: 1 1 30%;
+  text-align: center;
+}
+.sell {
+  flex: 1 1 30%;
+  text-align: center;
+}
+.chart {
+  min-width: 148px;
+  flex: 0 0;
+  text-align: center;
+}
+.changes {
+  width: 148px;
+  min-width: 148px;
+  flex: 0 0;
+  text-align: center;
+}
+.favorite {
+  width: 94px;
+  min-width: 94px;
+  flex: 0 0;
+  text-align: center;
+}

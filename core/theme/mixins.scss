@@ -1,0 +1,15 @@
+// @function containedLightShadow($color) {
+//   $result: 1;
+//   @return 0px 12px 24px $color, inset 0px -10px 20px $color;
+//   //   @return 0px 12px 24px rgba($color, 0.08),
+//   //     inset 0px -10px 20px rgba($color, 0.12);
+// }
+
+// @mixin containedLightPrimary {
+//   color: var(--primary-main);
+//   background-color: var(--primary-lighter);
+//   box-shadow: containedLightShadow(--primary-main);
+//   &:hover {
+//     background-color: var(--primary-light);
+//   }
+// }

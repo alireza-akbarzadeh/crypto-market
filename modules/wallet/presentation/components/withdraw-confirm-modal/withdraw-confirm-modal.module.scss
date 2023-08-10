@@ -1,0 +1,32 @@
+.root .dataContainer {
+  padding: 0 32px 12px;
+  .dataRow {
+    padding: 10px 0;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+  }
+  .submitButton {
+    margin-top: 16px;
+    min-width: 110px;
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    .dataContainer {
+      padding: 0 0 30px;
+      .dataRow {
+        display: flex;
+        text-align: start;
+        > *:first-child {
+          flex: 1;
+        }
+      }
+    }
+    .submitButton {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}

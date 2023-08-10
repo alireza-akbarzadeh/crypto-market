@@ -1,0 +1,6 @@
+button.root {
+  border: 1px solid var(--divider);
+  &.selected {
+    border-color: var(--primary-main);
+  }
+}

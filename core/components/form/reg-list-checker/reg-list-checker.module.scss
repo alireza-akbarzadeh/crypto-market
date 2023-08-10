@@ -1,0 +1,35 @@
+.root {
+  text-align: start;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  .title {
+    font-size: var(--font-body2);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .list {
+    .listItem {
+      margin: 2px 0;
+      font-size: var(--font-caption);
+      padding-right: 14px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--divider);
+      }
+      &.fulfilled {
+        color: var(--text-primary);
+        &::before {
+          background-color: var(--primary-main);
+        }
+      }
+    }
+  }
+}

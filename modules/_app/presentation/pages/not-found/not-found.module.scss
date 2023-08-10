@@ -1,0 +1,21 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+    .imageContainer {
+      width: 80%;
+      max-width: 438px;
+    }
+  }
+}
+
+[data-theme="dark"] .content .imageContainer img {
+  filter: hue-rotate(180deg) invert(0.9);
+}

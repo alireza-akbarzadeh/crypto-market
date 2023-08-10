@@ -1,0 +1,15 @@
+.listItem {
+  padding: 12px 4px;
+  display: flex;
+  & > * {
+    flex-basis: 50%;
+  }
+}
+.root {
+  .item {
+    margin-top: 32px;
+    .itemTitle {
+      color: var(--text-secondary);
+    }
+  }
+}

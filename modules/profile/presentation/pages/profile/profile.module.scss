@@ -1,0 +1,106 @@
+.root {
+  min-height: 100vh;
+  .logoContainer {
+    width: 6rem;
+    margin: -16px auto 16px;
+  }
+}
+.userRoot {
+  min-height: 100vh;
+  background-color: var(--background-secondary);
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .title {
+      margin-bottom: 24px;
+    }
+    .sidebar {
+      position: sticky;
+      top: 46px;
+      align-self: flex-start;
+      .userAvatar {
+        margin: 35px 0 32px;
+      }
+      .listDivider {
+        margin: 12px 0;
+      }
+      .list {
+        margin: 32px 0 0;
+        .listItem {
+          margin-bottom: 12px;
+          border-radius: 8px;
+          .listItemButton {
+            height: 56px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+    .content {
+      .paper {
+        background-color: var(--background-paper);
+        padding: 24px;
+        box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
+        border-radius: 12px;
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+        .title {
+          font-size: var(--font-h6);
+          font-weight: 700;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+  .tabsRoot {
+    // justify-content: center;
+    .tabsScrollable {
+      // flex-grow: 0;
+    }
+  }
+}
+@media (min-width: 600px) {
+  .userRoot {
+    .tabsRoot {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .userRoot {
+    .container {
+      max-width: 600px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      // .paper {
+      //   margin-top: 16px;
+      //   padding: 8px;
+      // }
+
+      .content {
+        .paper {
+          background-color: transparent;
+          padding: 0;
+          box-shadow: none;
+          border-radius: 0;
+          &.skip {
+            padding: 4px 12px;
+            background-color: var(--background-paper);
+            box-shadow: var(--shadow-1);
+            border-radius: 4px;
+          }
+          &:not(:last-child) {
+            margin-bottom: 24px;
+          }
+          .title {
+            font-size: var(--font-h6);
+            font-weight: 700;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}

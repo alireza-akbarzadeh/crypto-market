@@ -1,0 +1,174 @@
+.root {
+  .appHeader {
+    background-color: var(--background-paper);
+    // box-shadow: var(--shadow-1);
+  }
+  .container {
+    .paper {
+      .filters {
+        .button {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .root {
+    .container {
+      .paper {
+        .filters {
+          .searchInput {
+            margin-bottom: 8px;
+            :global .MuiInputBase-root {
+              border-radius: 8px;
+            }
+            .sortButtonWrapper {
+              height: 54%;
+              border-inline-start: 1px solid var(--divider);
+              padding-inline-start: 8px;
+            }
+          }
+
+          .button {
+            flex: 0;
+            // border-radius: 20px;
+            // height: 35px;
+            // min-width: fit-content;
+            flex-shrink: 0;
+            overflow: hidden;
+            // > * {
+            //   margin: 0 -10px;
+            // }
+          }
+          .groupWrapper {
+            // display: flex;
+            // justify-content: flex-end;
+            .group {
+              flex: 1 1;
+              max-width: 200px;
+              .btn {
+                padding: 0;
+                min-height: 27px;
+                margin: 2px;
+              }
+            }
+          }
+          // > * {
+          //   margin: 4px !important;
+          // }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    .container {
+      .paper {
+        .filters {
+          .searchInput {
+            .sortButtonWrapper {
+              display: none;
+            }
+          }
+          .group {
+            border-radius: 4px;
+            .btn {
+              border-radius: 8px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sortModal {
+    display: none;
+  }
+}
+@media (max-width: 899px) {
+  .root {
+    .container {
+      .paper {
+        padding: 16px 0;
+        .header {
+          display: none;
+        }
+        .tableWrapper {
+          margin: 12px -12px 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .root {
+    .appHeader {
+      box-shadow: none;
+      background-color: var(--background-secondary);
+    }
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--background-secondary)
+          url("../../../../../public/images/live-price-bg.png") no-repeat center;
+        background-size: cover;
+      }
+      .paper {
+        background-color: var(--background-paper);
+        padding: 32px;
+        position: relative;
+        border-radius: 16px;
+        box-shadow: 0px 40px 72px rgba(179, 179, 179, 0.08);
+
+        .header {
+          display: flex;
+          .title {
+            margin-inline-end: 24px;
+          }
+        }
+        .filters {
+          margin-top: 0;
+          margin-bottom: 24px;
+          .searchInput {
+            height: 100%;
+            > * {
+              height: 100%;
+            }
+            fieldset {
+              border-radius: 8px;
+            }
+          }
+          .button {
+            height: 100%;
+            border-radius: 8px;
+            padding: 7px;
+          }
+          .groupWrapper {
+            .group {
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sortModal {
+  div.container {
+    padding: 4px 24px;
+    .listItemButton {
+      padding: 12px 8px;
+      border-radius: 8px;
+      margin: 4px -8px;
+    }
+  }
+}

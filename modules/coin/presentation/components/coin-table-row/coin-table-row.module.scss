@@ -1,0 +1,244 @@
+.root {
+  border-bottom: 1px solid var(--divider);
+  padding: 10px 0;
+  display: block;
+  // &:hover {
+  //   background-color: transparent;
+  // }
+  // background-color: var(--error-light);
+  transition: background 0.4s ease-in-out;
+  &.dump {
+    .row {
+      background-color: var(--error-light);
+      // background-color: #fff0f3;
+    }
+  }
+  &.pump .row {
+    // background: #e7f5eb;
+
+    background-color: var(--success-light);
+  }
+
+  .row {
+    transition: background 0.4s ease-in-out;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 24px;
+    .name {
+      display: flex;
+      align-items: center;
+      .imageWrapper {
+        flex-shrink: 0;
+        width: 36px;
+        margin-inline-end: 12px;
+        margin-inline-start: 16px;
+        display: flex;
+      }
+      .titleWrapper {
+        min-width: 0;
+        .title {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .coinSubText {
+        .coinIndex {
+          min-width: 19px;
+          height: 19px;
+        }
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .value {
+        margin: 0 1ch;
+      }
+      .currency {
+        font-size: var(--font-body2);
+        color: var(--text-secondary);
+      }
+    }
+    .chart {
+      height: 40px;
+    }
+    .changes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > * {
+        font-weight: 700;
+        font-size: var(--font-body1);
+      }
+      .down {
+        color: var(--error-main);
+      }
+      .up {
+        color: var(--success-main);
+      }
+    }
+    .favorite {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .favoriteButton {
+        width: 40px;
+        height: 40px;
+        > * {
+          margin: 0;
+        }
+      }
+      .favoriteIcon,
+      .notFavoriteIcon {
+        font-size: 21px !important;
+        color: var(--text-secondary);
+      }
+      .favoriteIcon {
+        color: #ffd336;
+      }
+    }
+  }
+}
+
+.mobileRoot {
+  border-bottom: 1px solid var(--divider);
+  display: block;
+
+  &.dump {
+    .row {
+      background-color: var(--error-light);
+      // background-color: #fff0f3;
+    }
+  }
+  &.pump .row {
+    // background-color: #e7f5eb;
+
+    background-color: var(--success-light);
+  }
+  .row {
+    height: 100%;
+    transition: background-color 700ms ease-out;
+    display: flex;
+    align-items: center;
+    // border-bottom: 1px solid;
+    > * {
+      min-width: 0;
+      flex-shrink: 1;
+    }
+    .name {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      .imageWrapper {
+        flex-shrink: 0;
+        width: 32px;
+        margin: 0 8px;
+      }
+      .titleWrapper {
+        min-width: 0;
+        .title {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+    .chartContainer {
+      padding: 0 8px;
+      width: 20%;
+      max-width: 20%;
+      flex-shrink: 0;
+    }
+    .rialPrice {
+      width: 45%;
+      max-width: 45%;
+      flex-shrink: 0;
+    }
+    .worldPrice {
+      width: 26%;
+      max-width: 26%;
+      flex-shrink: 0;
+    }
+    .star {
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .favoriteButton {
+        margin-inline-end: 12px;
+        width: 27px;
+        height: 27px;
+        .favoriteIcon {
+          // color: #f6b87e;
+          color: #ffd336;
+          margin: 0;
+          cursor: pointer;
+          font-size: var(--font-body2) !important;
+          // color: var(--primary-main);
+        }
+      }
+    }
+    .prices {
+      width: 40%;
+      white-space: nowrap;
+    }
+  }
+}
+
+.coinSubText {
+  display: flex;
+  align-items: center;
+  .coinIndex {
+    background-color: var(--grey-300);
+    height: 13px;
+    min-width: 13px;
+    font-weight: 600;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline-end: 4px;
+  }
+}
+.notFavoriteIcon {
+  cursor: pointer;
+  font-size: 0.785714285714286rem !important;
+  // &:hover {
+  // color: #f6b87e;
+  // }
+}
+.goesUp {
+  background-color: rgba(76, 175, 80, 0.2);
+  transition: background-color 200ms ease-out;
+}
+.goesDown {
+  background-color: rgba(239, 83, 80, 0.2);
+  transition: background-color 200ms ease-out;
+}
+.chartContainer {
+  width: 50px;
+  height: 36px;
+}
+svg.favoriteSkeleton {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  transform: none;
+  color: var(--skeleton);
+}
+.changesChip {
+  border-radius: 20px;
+  color: var(--primary-contrastText);
+  padding: 0 6px;
+  min-width: 40px;
+  margin-inline-start: 4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

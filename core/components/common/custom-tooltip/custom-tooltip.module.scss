@@ -1,0 +1,11 @@
+.text {
+  // border-bottom-width: 1px;
+  // border-bottom-style: dashed;
+  // cursor: pointer;
+  display: inline-flex;
+  .icon {
+    margin-inline-start: 0.5ch;
+    color: var(--primary-main);
+    cursor: pointer;
+  }
+}

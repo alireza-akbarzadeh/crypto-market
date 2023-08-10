@@ -1,0 +1,220 @@
+.root {
+  background-color: var(--background-secondary);
+  min-height: 100vh;
+  .headerWrapper {
+    // position: relative;
+    // height: 115px;
+    // margin-bottom: -60px;
+    // background: linear-gradient(256.24deg, #3167bf -2.01%, #4285f2 117.16%);
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: linear-gradient(
+    //     261.25deg,
+    //     #3269c2 -56.89%,
+    //     #6194e6 101.75%
+    //   );
+    //   clip-path: polygon(
+    //     0 100%,
+    //     9% 58%,
+    //     20% 86%,
+    //     38% 40%,
+    //     52% 65%,
+    //     68% 56%,
+    //     70% 27%,
+    //     82% 39%,
+    //     93% 8%,
+    //     100% 20%,
+    //     100% 100%
+    //   );
+    // }
+    .headerDesc {
+      position: relative;
+      padding-top: 40px;
+      // color: var(--primary-contrastText);
+      .title {
+        font-size: var(--font-h5);
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .subtitle {
+        opacity: 0.7;
+        font-weight: 500;
+      }
+    }
+  }
+  .container {
+    padding-bottom: 24px;
+    .headSection {
+      margin: 0 12px 12px;
+      .totalSection {
+        background-color: var(--background-paper);
+        box-shadow: var(--shadow-1);
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        .value {
+          margin: 12px 0 6px;
+        }
+        .difference {
+          display: inline-flex;
+          > * {
+            margin: 0 0.5ch;
+          }
+        }
+      }
+      // .totalCount {
+      //   display: flex;
+      //   flex-direction: column;
+      //   .totalWrapper {
+      //     margin: auto 0;
+      //     padding-top: 8px;
+      //     display: flex;
+      //     .totalItem {
+      //       flex: 1;
+      //       display: flex;
+      //       align-items: center;
+      //       .iconWrapper {
+      //         display: flex;
+      //         align-items: center;
+      //         justify-content: center;
+      //         background-color: var(--secondary-main);
+      //         color: var(--secondary-contrastText);
+      //         width: 46px;
+      //         height: 46px;
+      //         border-radius: 50%;
+      //         margin-inline-end: 20px;
+      //         > * {
+      //           font-size: 38px;
+      //         }
+      //       }
+      //       .label {
+      //         color: var(--text-secondary);
+      //       }
+      //       .amount {
+      //         font-size: var(--font-h5);
+      //       }
+      //     }
+      //   }
+      // }
+    }
+    .tableWrapper {
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+          font-size: var(--font-h6);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .root {
+    .headerWrapper {
+      .header {
+        transition: background-color 0.3s ease-in-out;
+        background-image: none;
+        box-shadow: var(--shadow-1);
+        &.top {
+          background-color: transparent;
+          box-shadow: none;
+          border: none;
+          h1 {
+            opacity: 0;
+          }
+          * {
+            color: var(--primary-contrastText);
+          }
+        }
+      }
+      .headerDesc {
+        display: none;
+      }
+    }
+    .container {
+      .headSection {
+        padding-top: 32px;
+        .totalSection {
+          text-align: center;
+        }
+        // .totalCount {
+        //   display: none;
+        // }
+        .chartSection {
+          padding-top: 32px;
+        }
+      }
+      .tableWrapper {
+        .header {
+        }
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .root {
+    .headerWrapper {
+      height: 258px;
+      margin-bottom: -90px;
+    }
+    .container {
+      .headSection {
+        display: flex;
+        margin: 0 -12px;
+        > * {
+          background-color: var(--background-paper);
+          border-radius: 10px;
+          padding: 24px;
+          position: relative;
+          margin: 12px;
+          box-shadow: var(--shadow-1);
+          .title {
+            font-size: var(--font-h6);
+            color: var(--text-secondary);
+          }
+        }
+        .totalSection {
+          flex: 1.7;
+          display: flex;
+          flex-direction: column;
+          padding: 24px;
+          background: var(--background-paper)
+            url(../../../../../public/images/asset-summery-background.png) right
+            bottom no-repeat;
+          background-size: auto 80%;
+          .value {
+            margin: auto 0;
+            margin-inline-start: auto;
+          }
+          .difference {
+            margin-inline-start: auto;
+          }
+        }
+        // .totalCount {
+        //   flex: 3;
+        // }
+        .chartSection {
+          flex: 2;
+        }
+      }
+      .tableWrapper {
+        background-color: var(--background-paper);
+        padding: 24px;
+        border-radius: 10px;
+        box-shadow: var(--shadow-1);
+        margin: 24px 0;
+        .header {
+          .title {
+            color: var(--text-secondary);
+          }
+        }
+      }
+    }
+  }
+}

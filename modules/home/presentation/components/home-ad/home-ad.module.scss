@@ -1,0 +1,29 @@
+.root {
+  padding: 66px 0;
+  .button {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    align-items: stretch;
+    flex-direction: row;
+    > * {
+      flex: 1;
+      pointer-events: none;
+    }
+  }
+}
+@media (min-width: 900px) {
+  .root {
+    display: none;
+  }
+  //   [data-theme="dark"] .root {
+  //     background-color: #4285f20a;
+  //   }
+}
+@media (max-width: 899px) {
+  .root {
+    background-color: var(--background-paper);
+    padding: 16px 0;
+    border-top: 16px solid var(--background-secondary);
+  }
+}

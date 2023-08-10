@@ -1,0 +1,62 @@
+.balanceBox {
+  position: relative;
+  background-color: var(--primary-main);
+  border: 2px solid var(--primary-light);
+  border: 2px solid #fff9;
+  border-radius: 12px;
+  background: radial-gradient(
+      74.39% 216.3% at 33.38% 38.1%,
+      #4293f2 0%,
+      #4285f2 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 2px solid rgba(255, 255, 255, 0.21);
+  color: var(--primary-contrastText);
+  height: 141px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  .circles,
+  .circles::before,
+  .circles::after {
+    position: absolute;
+    height: 303px;
+    width: 303px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: circleWaves 15s ease-in-out infinite;
+  }
+  .circles {
+    left: 43.29%;
+    top: -51px;
+    &::before {
+      content: "";
+      left: 6%;
+      top: 9%;
+      animation-delay: 2s;
+    }
+    &::after {
+      content: "";
+      left: 14.5%;
+      top: 12%;
+      animation-delay: 4s;
+    }
+  }
+}
+@keyframes circleWaves {
+  0%,
+  45%,
+  100% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(2%, 1%);
+  }
+  30% {
+    transform: translate(4.5%, 3%);
+  }
+}

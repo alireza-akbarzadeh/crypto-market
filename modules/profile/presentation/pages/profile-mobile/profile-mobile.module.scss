@@ -1,0 +1,132 @@
+.root {
+  padding-bottom: 24px;
+  background-color: var(--background-paper);
+  section {
+    // background-color: var(--background-paper);
+    &.divider {
+      border-bottom: 4px solid var(--background-secondary);
+      // border-bottom: 4px solid var(--primary-lighter);
+    }
+    .userCard {
+      display: flex;
+      align-items: center;
+      padding: 16px 0;
+      .avatar {
+        border: 1px solid var(--divider);
+      }
+      .name {
+        flex: 1;
+        margin: 0 8px;
+      }
+      .kycStatus {
+        border-radius: 20px;
+        > * {
+          padding: 4px 8px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          span {
+            margin-inline-start: 4px;
+          }
+          svg {
+            margin-inline-start: -4px;
+          }
+        }
+        .success {
+          color: var(--success-main);
+          background-color: var(--success-lighter);
+        }
+        .error {
+          color: var(--error-main);
+          background-color: var(--error-lighter);
+        }
+        .warning {
+          color: var(--warning-main);
+          background-color: var(--warning-lighter);
+        }
+      }
+    }
+    .balanceBox {
+      margin: 12px 0;
+      padding: 12px;
+      align-items: stretch;
+      justify-content: space-between;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .button {
+          background: rgba(255, 255, 255, 0.16);
+          min-height: 38px;
+          padding: 0 16px;
+          .icon {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+    .title {
+      margin-top: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    .accountList {
+      margin: 0 -12px;
+      .listItemIcon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background-color: var(--background-secondary);
+        margin-inline-end: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .verticalList {
+      display: flex;
+      overflow: hidden;
+      padding: 16px 0;
+      margin: 0 -12px;
+      > * {
+        flex: 1 1;
+        box-shadow: 1px 0 var(--divider);
+        padding: 4px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+        svg {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    .list {
+      margin: 0 -12px;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      .btn {
+        margin: 4px;
+        background-color: var(--background-paper);
+        border: 1px solid var(--action-disabledBackground);
+        &:hover {
+          background-color: var(--background-paper);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .root {
+    max-width: 600px;
+    margin: auto;
+    // background-color: var(--background-paper);
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow1);
+  }
+}

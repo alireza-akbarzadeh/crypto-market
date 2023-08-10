@@ -1,0 +1,11 @@
+.listPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .listContainer {
+    flex-shrink: 1;
+    min-height: 0;
+    overflow: auto;
+    margin: 0 -16px;
+  }
+}

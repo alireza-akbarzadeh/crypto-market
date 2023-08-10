@@ -1,0 +1,85 @@
+.root {
+  .centerContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    > div {
+      max-width: 100%;
+    }
+    .trustBtn {
+      background-color: #3375bb;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      &.hidden {
+        display: none;
+      }
+      .logoWrapper {
+        margin-inline-start: 20px;
+        display: flex;
+      }
+
+      .btnTitle {
+        opacity: 0.8;
+        font-size: var(--text-body2);
+        font-weight: 500;
+      }
+      .btnSubtitle {
+        font-weight: 700;
+      }
+    }
+    .qrWrapper {
+      padding: 16px 0;
+    }
+    .title {
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  }
+}
+
+.modal {
+  .title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+
+.addressRow {
+  display: flex;
+  margin-bottom: 24px;
+  .copyBtn {
+    position: relative;
+    .text {
+      &.hide {
+        opacity: 0;
+      }
+    }
+    .checkIcon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .value {
+    flex: 1 1;
+    min-width: 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+    padding: 8px 12px;
+  }
+  > * {
+    padding: 8px;
+    background-color: var(--action-disabledBackground);
+    margin: 0 2px;
+    border-radius: 4px;
+  }
+}

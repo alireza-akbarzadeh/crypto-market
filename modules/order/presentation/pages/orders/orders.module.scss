@@ -1,0 +1,83 @@
+.root {
+  min-height: 100vh;
+  .controlBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .orderLink {
+      display: flex;
+      gap: 40px;
+      .downloadOrder{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: var(--primary-main);
+        font-weight: bolder;
+        font-size: var(--font-h6);
+        svg{
+          margin-right: 5px;
+          font-size: 20px;
+        }
+
+      }
+    }
+  }
+  .paper {
+    padding-top: 32px;
+  }
+  .scrollable {
+    overflow: auto;
+    .chipsContainer {
+      display: flex;
+      padding: 0 8px 8px;
+      .chip {
+        border: 1px solid var(--divider);
+        border-radius: 8px;
+        padding: 4px 12px;
+        margin: 4px;
+        white-space: nowrap;
+        .icon {
+          margin-inline-start: -4px;
+          margin-inline-end: 4px;
+        }
+        .endIcon {
+          margin-inline-end: -4px;
+          margin-inline-start: 8px;
+        }
+        &.primary {
+          color: var(--primary-main);
+          border-color: var(--primary-main);
+          background-color: var(--primary-lighter);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--background-secondary)
+        url("../../../../../public/images/orders-bg.png") no-repeat bottom right;
+      background-size: cover;
+    }
+    .paper {
+      position: relative;
+      margin: 72px 0 40px;
+      background-color: var(--background-paper);
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0px 40px 72px rgba(179, 179, 179, 0.08);
+      .header {
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+$duration: 1.3s;
+$size: 6px;
+.loadingElement {
+  display: inline-flex;
+  align-items: center;
+  height: $size * 5;
+  span {
+    width: $size;
+    height: $size;
+    margin: $size * 0.75;
+    border-radius: $size * 0.5;
+    animation-name: main-loading;
+    animation-timing-function: linear;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+    &:nth-child(1) {
+      background-color: var(--success-main);
+    }
+    &:nth-child(2) {
+      background-color: var(--warning-main);
+      animation-delay: $duration * 0.15;
+    }
+    &:nth-child(3) {
+      background-color: var(--primary-main);
+      animation-delay: $duration * 0.3;
+    }
+    &:nth-child(4) {
+      background-color: var(--error-main);
+      animation-delay: 0.75s;
+      animation-delay: $duration * 0.45;
+    }
+  }
+}
+@keyframes main-loading {
+  0%,
+  40%,
+  100% {
+    height: $size;
+  }
+  17%,
+  23% {
+    height: $size * 3.5;
+  }
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  &.fullscreen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: var(--background-default);
+  }
+  .loadingContainer {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+}

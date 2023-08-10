@@ -1,0 +1,66 @@
+.wrapper {
+  .listItem {
+    height: 100%;
+    .clickable {
+      height: 100%;
+      max-width: 100%;
+      .coin {
+        height: 100%;
+        align-items: center;
+        .coinProps {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+          .coinIcon {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+          }
+          .coinName {
+            min-width: 0;
+            margin: 0 8px;
+            flex-shrink: 1;
+            overflow: hidden;
+            > * {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              &:last-child {
+                direction: ltr;
+              }
+            }
+          }
+
+          &.skipPrice {
+            flex-shrink: 1;
+            .coinName {
+              display: flex;
+              justify-content: space-between;
+              flex: 1;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .wrapper {
+    padding: 0 24px;
+    .listItem {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--divider);
+      .clickable {
+        border-radius: 8px;
+        .coin {
+        }
+      }
+    }
+    &:last-child {
+      .listItem {
+        border-bottom: none;
+      }
+    }
+  }
+}

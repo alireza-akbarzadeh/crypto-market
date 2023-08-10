@@ -1,0 +1,18 @@
+.fakeInput.important {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  img {
+    width: 20px;
+    margin-left: 2px;
+  }
+  .name {
+    margin-inline-start: 4px;
+    white-space: nowrap;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

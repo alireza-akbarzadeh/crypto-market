@@ -1,0 +1,210 @@
+.root {
+  background-color: var(--background-secondary);
+  min-height: 100vh;
+  padding-bottom: 24px;
+  .paper {
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .topSection {
+    padding: 24px 0;
+    .paper {
+      border-radius: 12px;
+      box-shadow: var(--shadow-1);
+      background-color: var(--background-paper);
+      .title {
+        text-align: center;
+        margin-bottom: 16px;
+        color: var(--text-secondary);
+        font-weight: 500;
+      }
+      .listItem {
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+
+        .label {
+          color: var(--text-secondary);
+        }
+        .value {
+          color: var(--text-primary);
+          font-weight: 700;
+          span {
+            color: var(--text-secondary);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .filterSection {
+    background-color: var(--background-paper);
+    .listItem {
+      display: flex;
+      justify-content: space-between;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      .label {
+        color: var(--text-secondary);
+      }
+      .value {
+        color: var(--text-primary);
+        font-weight: 700;
+        span {
+          color: var(--text-secondary);
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .listSection {
+    .listHeader {
+      display: none;
+    }
+    .listItem {
+      display: flex;
+      padding: 16px 0;
+      align-items: center;
+      justify-content: space-between;
+
+      &:not(:last-child):not(.more) {
+        border-bottom: 1px solid var(--divider);
+      }
+      .nameSection {
+        display: flex;
+        align-items: center;
+        .iconWrapper {
+          background-color: var(--background-secondary);
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        > :not(:first-child) {
+          margin-inline-start: 12px;
+        }
+      }
+      .count {
+      }
+      .price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    .paper {
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .topSection {
+      .paper {
+        .title {
+          text-align: start;
+        }
+        .listItem {
+          &:not(:last-child) {
+          }
+
+          .label {
+            display: none;
+          }
+          .value {
+            margin-inline-start: auto;
+            span {
+            }
+          }
+        }
+      }
+    }
+    .filterSection {
+      background: none;
+      margin-bottom: 16px;
+      .head {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .chartSection,
+    .listSection {
+      .paper {
+        background-color: var(--background-paper);
+        box-shadow: var(--shadow-1);
+      }
+    }
+    .listSection {
+      .listHeader {
+        display: flex;
+      }
+    }
+
+    .buttonGroup {
+      width: auto;
+      white-space: nowrap;
+      :global {
+        .MuiToggleButton-root {
+          padding-inline: 24px;
+        }
+      }
+    }
+
+    .listSection {
+      .listHeader,
+      .listItem {
+        display: flex;
+        padding: 16px 32px;
+        align-items: center;
+        > * {
+          flex: 0 1 33%;
+          min-width: 0;
+          padding: 0 8px;
+        }
+      }
+      .listHeader {
+        background-color: var(--background-secondary);
+        border-radius: 8px;
+      }
+      .listItem {
+        // .nameSection {
+        //   display: flex;
+        //   display: flex;
+        //   align-items: center;
+        //   > :not(:first-child) {
+        //     margin-inline-start: 12px;
+        //   }
+        // }
+        // .count {
+        // }
+        .price {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 599px) {
+  .root {
+    .listSection {
+      margin: 0 -12px;
+      background-color: var(--background-paper);
+      .paper {
+        padding: 0 16px;
+      }
+    }
+    .filterSection {
+      padding-bottom: 24px;
+      .head {
+        margin: 24px 0;
+      }
+    }
+  }
+}

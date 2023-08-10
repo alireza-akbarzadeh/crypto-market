@@ -1,0 +1,109 @@
+.mainContent {
+  padding: 0 4px;
+  .inventory {
+    padding: 12px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    .content {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      .icon {
+        font-size: 1.715em;
+        flex-shrink: 0;
+        margin-inline-end: 8px;
+      }
+      .values {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        .label {
+          font-weight: 700;
+        }
+        .value {
+          color: var(--text-secondary);
+          .amount {
+            color: var(--text-primary);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .badge {
+      text-align: center;
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+      &.success {
+        background-color: var(--success-lighter);
+        color: var(--success-main);
+      }
+      &.error {
+        background-color: var(--error-lighter);
+        color: var(--error-main);
+      }
+    }
+  }
+  .invoice {
+    .item {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      .label {
+      }
+      .value {
+        font-weight: 500;
+        span {
+          color: var(--text-primary);
+        }
+      }
+      &.primary * {
+        color: var(--primary-main);
+      }
+    }
+    .payable {
+      color: var(--success-main);
+      border: 1px solid var(--success-light);
+      background-color: var(--success-lighter);
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .label {
+        font-weight: 700;
+      }
+      .value {
+        font-weight: 500;
+        font-size: var(--font-body2);
+        span {
+          font-size: var(--font-h6);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .mainContent {
+    padding: 0 40px 32px;
+    .inventory {
+      display: flex;
+      padding: 12px 16px;
+      margin-bottom: 48px;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      .content {
+        margin: 0;
+        flex-grow: 1;
+        .values {
+          display: block;
+        }
+      }
+    }
+  }
+}

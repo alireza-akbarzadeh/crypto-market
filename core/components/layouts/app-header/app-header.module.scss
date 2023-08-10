@@ -1,0 +1,67 @@
+.appBar {
+  color: var(--text-primary) !important;
+  z-index: 1000;
+  .endLogo {
+    width: 80px;
+    margin-inline-start: auto;
+    display: flex;
+  }
+  .desktopToolbar {
+    .navbar {
+      display: flex;
+      align-items: center;
+      color: var(--text-secondary);
+    }
+    .endSection {
+      display: flex;
+      margin-inline-start: auto;
+      align-items: center;
+      .divider {
+        height: 24px;
+        margin: 0 8px;
+      }
+      .logoContainer {
+        display: flex;
+      }
+    }
+  }
+  .headerTitle {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: var(--font-h6);
+    // font-weight: 700;
+    // font-size: var(--font-h5);
+  }
+}
+.announcementHolder {
+  opacity: 0;
+}
+.announcement {
+  background-color: var(--primary-main);
+  padding: 8px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    .link {
+      margin: 0 12px;
+      // text-decoration: underline;
+      display: flex;
+      align-items: center;
+    }
+    .close {
+      margin-inline-start: auto;
+    }
+  }
+  * {
+    color: var(--primary-contrastText);
+  }
+}
+@media (max-width: 899px) {
+  .appBar {
+    border-bottom: 1px solid var(--divider);
+    background-color: var(--background-paper);
+  }
+}

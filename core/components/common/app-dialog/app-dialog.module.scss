@@ -1,0 +1,132 @@
+.root {
+  .header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    .logo {
+      display: none;
+    }
+    .closeIconWrapper {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+    }
+  }
+  .content {
+    position: relative;
+    // overflow: hidden;
+    padding: 24px 12px 32px;
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    .dialogPaper {
+      max-width: 442px;
+    }
+    .header {
+      height: 88px;
+      .logo {
+        display: block;
+      }
+    }
+    .content {
+      padding: 40px 58px;
+      .blurBg {
+        background-image: linear-gradient(
+          90deg,
+          var(--warning-main) 0%,
+          var(--warning-main) 25%,
+          var(--primary-main) 25%,
+          var(--primary-main) 50%,
+          var(--success-main) 50%,
+          var(--success-main) 75%,
+          var(--error-main) 75%,
+          var(--error-main) 100%
+        );
+        position: absolute;
+        top: 0;
+        height: 8px;
+        left: 15%;
+        right: 15%;
+        filter: blur(40px);
+      }
+    }
+  }
+}
+@media (max-width: 599px) {
+  .root {
+    .dialogPaper.notFullScreen {
+      width: calc(100% - 24px);
+      margin: 12px;
+    }
+
+    &.style-1 {
+      .header {
+        .closeIconWrapper {
+          right: 4px;
+        }
+      }
+    }
+    &.style-2 {
+      .header {
+        background-color: var(--background-paper);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        height: 56px;
+        justify-content: flex-start;
+        align-items: center;
+        .title {
+          // color: var(--primary-main);
+          font-size: var(--font-h6);
+        }
+        .closeIconWrapper {
+          // right: 0;
+          position: static;
+          transform: none;
+          order: -1;
+          margin-inline-end: 4px;
+        }
+      }
+    }
+    &.style-3 {
+      .header {
+        height: 36px;
+        .closeIconWrapper {
+          right: auto;
+          left: 0;
+          transform: none;
+          top: 0;
+          z-index: 2;
+        }
+        .title {
+          display: none;
+        }
+      }
+
+      .content {
+        padding: 0 12px 20px;
+      }
+    }
+    &.style-4 {
+      .bottomSheetHandler {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        &::before {
+          content: "";
+          width: 40px;
+          height: 6px;
+          border-radius: 6px;
+          background-color: var(--action-disabledBackground);
+        }
+      }
+      .dialogPaper {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+    }
+  }
+}

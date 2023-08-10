@@ -1,0 +1,12 @@
+.root {
+  cursor: pointer;
+  user-select: none;
+  padding: 0 1ch;
+  &.disabled {
+    cursor: auto;
+  }
+  .loading {
+    margin-bottom: -4px;
+    margin-inline-start: 4px;
+  }
+}

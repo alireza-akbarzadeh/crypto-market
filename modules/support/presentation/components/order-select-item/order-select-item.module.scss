@@ -1,0 +1,27 @@
+.card {
+  display: block;
+  padding: 0 16px;
+  .buttonInner {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--divider);
+    padding: 16px 0;
+    .content {
+      flex: 1;
+      > * {
+        margin: 2px 0;
+      }
+      .amount {
+        font-weight: 700;
+      }
+    }
+    .orderNumber {
+      background-color: var(--action-disabledBackground);
+      padding: 8px 16px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

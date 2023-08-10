@@ -1,0 +1,89 @@
+.root {
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--divider);
+  }
+  .nameSection {
+    display: flex;
+    align-items: center;
+    .imageWrapper {
+      display: flex;
+      width: 36px;
+      margin-inline-end: 12px;
+    }
+  }
+  .network {
+    min-width: 56px;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+  .tagRow {
+    display: flex;
+    font-size: var(--font-body2);
+    white-space: nowrap;
+    .label {
+      flex-shrink: 0;
+      margin-inline-end: 4px;
+      color: var(--text-secondary);
+    }
+    .tag {
+      flex-shrink: 1;
+      direction: ltr;
+      text-overflow: ellipsis;
+      min-width: 0;
+      overflow: hidden;
+    }
+  }
+  .actionSection {
+    display: flex;
+    > * {
+      margin: 0 4px;
+      flex-grow: 1;
+    }
+  }
+}
+.card {
+  display: flex;
+  padding: 12px;
+  position: relative;
+  .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 3.3rem;
+    padding: 8px 0 0;
+    .imageWrapper {
+      width: 2.9rem;
+    }
+    .network {
+      margin: auto;
+      font-size: var(--font-body2);
+    }
+  }
+  .content {
+    flex-grow: 1;
+    text-align: start;
+    margin-inline-start: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4px 0;
+    }
+  }
+  .action {
+    display: flex;
+    justify-content: flex-end;
+    // margin-top: -4px;
+    // position: absolute;
+    // left: 12px;
+    // bottom: 8px;
+  }
+}
+
+.network {
+  text-align: center;
+}

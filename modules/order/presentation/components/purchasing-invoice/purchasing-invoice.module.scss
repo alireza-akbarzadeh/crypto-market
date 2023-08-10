@@ -1,0 +1,93 @@
+.root {
+  .invoicePaper {
+    border-width: 0;
+    .invoiceHeader {
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 25px;
+      .invoiceIcon {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        padding: 2px;
+      }
+    }
+
+    .list {
+      padding: 0;
+      margin-bottom: 16px;
+      li {
+        display: flex;
+        padding: 12px 0px;
+        justify-content: space-between;
+        > span {
+          color: var(--text-secondary);
+          &:last-child {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .feeSection {
+      background-color: var(--background-secondary);
+      border-radius: 8px;
+      padding: 12px 12px 5px;
+      margin-bottom: 16px;
+      .title {
+        margin-bottom: 9px;
+        color: var(--text-secondary);
+        font-weight: 500;
+      }
+      .list {
+        margin-bottom: 0;
+        li {
+          padding: 7px 0;
+        }
+      }
+    }
+
+    .card {
+      display: flex;
+      border: 1px solid;
+      border-radius: 8px;
+      padding: 14px 12px;
+      display: flex;
+      justify-content: space-between;
+
+      &.amountSection {
+        margin-bottom: 16px;
+        color: var(--primary-main);
+        border-color: var(--primary-light);
+        background-color: var(--primary-lighter);
+      }
+      &.valueSection {
+        color: var(--success-main);
+        border-color: var(--success-light);
+        background-color: var(--success-lighter);
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    .invoicePaper {
+      border-width: 1px;
+      margin: 24px 0;
+      padding: 0 16px 16px;
+      .invoiceHeader {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .list {
+        li {
+          padding: 16px 0;
+        }
+      }
+    }
+  }
+}

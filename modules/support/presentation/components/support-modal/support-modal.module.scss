@@ -1,0 +1,14 @@
+.modal {
+  height: 620px;
+  width: 370px;
+  position: fixed;
+  bottom: 28px;
+  left: 24px;
+  z-index: 1300;
+}
+.paper {
+  overflow: hidden;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,46 @@
+.root {
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .content {
+    .contentHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 8px 0;
+      .imageWrapper {
+      }
+    }
+    .paper {
+      padding: 16px 12px;
+      margin: 24px 0 16px;
+      input,
+      select {
+        text-align: center;
+      }
+      .desc {
+        margin-bottom: 16px;
+      }
+    }
+    .button {
+      margin-top: 12px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .root {
+    .content {
+      .paper {
+        padding: 0;
+        margin: 0;
+        background: none;
+        box-shadow: none;
+        .desc {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

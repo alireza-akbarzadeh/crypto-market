@@ -1,0 +1,16 @@
+// .root {
+//   color: var(--text-primary) !important;
+//   background-color: var(--background-paper);
+//   border-bottom: 1px solid var(--divider);
+//   box-shadow: none;
+
+// }
+.toolbar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+  }
+}

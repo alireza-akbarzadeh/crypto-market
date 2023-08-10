@@ -1,0 +1,38 @@
+.root {
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .card {
+    display: block;
+    margin-top: 16px;
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    padding: 12px;
+    &.disabled {
+      opacity: 0.6;
+      filter: grayscale(1);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      .imageWrapper {
+      }
+      .name {
+        flex: 1;
+        margin: 0 8px;
+      }
+    }
+    .iban {
+      text-align: center;
+      font-size: var(--font-h6);
+      font-weight: 500;
+    }
+    &.selected {
+      border-color: var(--primary-main);
+      background-color: var(--primary-lighter);
+    }
+  }
+}

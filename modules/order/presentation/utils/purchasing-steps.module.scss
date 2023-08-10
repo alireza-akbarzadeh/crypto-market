@@ -1,0 +1,86 @@
+section {
+  .stepTitle {
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .paper {
+    padding: 16px 8px;
+    margin-bottom: 8px;
+
+    .addButton {
+      padding: 16px;
+      width: 100%;
+      margin: 0 0 8px;
+    }
+    .paragraph {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    .helperText {
+      margin: -4px;
+      margin-inline-start: 25px;
+    }
+  }
+  .alert {
+    padding: 16px 8px;
+    margin-bottom: 16px;
+  }
+
+  .footer {
+    display: flex;
+    padding: 7px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--background-paper);
+    > * {
+      flex-grow: 1;
+      flex-basis: 50%;
+      margin: 0 5px;
+    }
+    .buttonIcon {
+      font-size: 1rem;
+    }
+  }
+}
+@media (min-width: 600px) {
+  section {
+    .paper {
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0px 20px 56px rgba(0, 0, 0, 0.04);
+      .stepTitle {
+        text-align: start;
+        .stepPart {
+          color: var(--text-secondary);
+        }
+      }
+      .addButton {
+        min-width: 256px;
+        height: 50px;
+        padding: 0;
+        width: auto;
+        margin: 0 auto 16px;
+        display: flex;
+      }
+      .rulesBox {
+        background-color: var(--primary-lighter);
+        padding: 16px;
+        border-radius: 8px;
+        margin-bottom: 25px;
+      }
+      .helperText {
+        margin: -6px 0 16px;
+        margin-inline-start: 25px;
+      }
+      .footer {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        margin: 0 -5px;
+      }
+    }
+  }
+}

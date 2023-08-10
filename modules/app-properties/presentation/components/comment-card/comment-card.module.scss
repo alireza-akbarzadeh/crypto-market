@@ -1,0 +1,45 @@
+.card {
+  // padding: 8px;
+  padding: 16px;
+  flex-grow: 1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  .userInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-inline-end: 12px;
+      // width: 24px;
+      // height: 24px;
+      // margin: 0 4px;
+      //   border: 1px solid;
+    }
+  }
+  .message {
+    // margin: 0 24px;
+    // margin-inline-start: 32px;
+    word-break: break-word;
+    text-align: justify;
+  }
+  .date {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .icon {
+      font-size: inherit;
+      margin-inline-start: 4px;
+    }
+  }
+}
+.replyContainer {
+  margin-top: 8px;
+  display: flex;
+  .replyIcon {
+    transform: translateX(2px);
+  }
+}

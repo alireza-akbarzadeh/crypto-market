@@ -1,0 +1,156 @@
+@use "sass:math";
+
+$size: 20px;
+$speed: 3s;
+$peakopacity: 0.7;
+
+.mainContainer {
+  position: relative;
+  min-height: 100vh;
+  // padding-top: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+  padding-bottom: 20vh;
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+    // padding-bottom: 20vh;
+    max-width: 700px;
+    margin: auto;
+    .logoContainer {
+      position: relative;
+      max-width: 272px;
+      width: 59%;
+      margin-bottom: 0.4rem;
+      .logoHolder {
+        padding-top: 40%;
+      }
+    }
+    .motto {
+      text-align: center;
+      margin: 9px 0;
+      font-weight: 300;
+      overflow: hidden;
+      > * {
+        margin: -1px 0;
+      }
+    }
+    .phone {
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+
+      .phoneIcon {
+        margin-inline-end: 8px;
+      }
+    }
+    .form {
+      width: 100%;
+      .actionButtons {
+        display: flex;
+        justify-content: center;
+        > * {
+          width: 155px;
+          margin: 11px 4px;
+          height: 36px;
+          font-weight: 500;
+          transition: none;
+          box-shadow: none;
+        }
+      }
+      :global {
+        .MuiFormControl-root {
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        .MuiOutlinedInput-input {
+          min-height: 44px !important;
+        }
+      }
+    }
+
+    .arrows {
+      position: absolute;
+      bottom: 160px;
+      left: 50%;
+      /**/
+      width: $size;
+      height: $size;
+      transform: translateX(-50%);
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: $peakopacity;
+        border-left: 2px solid var(--primary-main);
+        border-bottom: 2px solid var(--primary-main);
+        transform: translate(math.div($size, 3), math.div($size * 4, 3))
+          rotate(-45deg);
+        animation: arrows $speed linear infinite;
+      }
+      &:after {
+        animation-delay: math.div($speed, -2);
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .mainContainer {
+    // margin-bottom: -35vh;
+    .container {
+      .form {
+        .actionButtons {
+          display: flex;
+          justify-content: center;
+          margin: 0 -4px;
+          > * {
+            width: 50%;
+            height: auto;
+            font-size: var(--font-body1);
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 899px) {
+  .mainContainer .container .arrows {
+    display: none;
+  }
+}
+@media (max-height: 460px) {
+  .mainContainer {
+    margin-top: 40px;
+    transform: none;
+    margin-bottom: 40px;
+  }
+}
+
+@keyframes arrows {
+  0% {
+    opacity: 0;
+    transform: translate(math.div($size, -6), math.div($size * 4, -6))
+      rotate(-45deg);
+  }
+  10%,
+  90% {
+    opacity: 0;
+  }
+  50% {
+    opacity: $peakopacity;
+    transform: translate(math.div($size, -6), 0px) rotate(-45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(math.div($size, -6), math.div($size * 4, 6))
+      rotate(-45deg);
+  }
+}

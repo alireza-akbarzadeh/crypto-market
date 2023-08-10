@@ -1,0 +1,25 @@
+.root {
+  background-color: var(--background-secondary);
+  min-height: 100vh;
+  .paper {
+    padding: 32px;
+    margin: 80px 0 40px;
+    .selectItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid var(--divider);
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+  }
+}
+@media (max-width: 599px) {
+  .root {
+    .paper {
+      padding: 16px 12px;
+      margin: 24px 0;
+    }
+  }
+}

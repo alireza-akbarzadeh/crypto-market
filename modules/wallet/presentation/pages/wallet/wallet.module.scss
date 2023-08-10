@@ -1,0 +1,74 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  > * {
+    flex-shrink: 0;
+  }
+  .scrollableContent {
+    flex-grow: 1;
+    flex-shrink: 1;
+    // overflow: auto;
+  }
+  .balanceBox {
+    .title {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+    .value {
+      font-weight: 700;
+      font-size: var(--font-h6);
+      margin-top: 8px;
+      span {
+        opacity: 0.8;
+        font-weight: 400;
+        font-size: var(--font-body1);
+      }
+    }
+  }
+  .desktopTop {
+    display: flex;
+    padding: 36px 0 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--divider);
+    .cash {
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      background-color: var(--background-secondary);
+      border-radius: 4px;
+      margin-inline-end: 24px;
+      min-width: 210px;
+      .icon {
+        margin-inline-end: 20px;
+        font-size: 24px;
+      }
+      .value {
+        margin-top: 8px;
+      }
+    }
+    .tabs {
+      display: flex;
+      flex-grow: 1;
+      .tabItem {
+        border: 1px solid var(--divider);
+        margin-inline-start: 24px;
+        flex: 1 1 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        font-weight: 600;
+        .icon {
+          font-size: 32px;
+        }
+        &.selected {
+          box-shadow: 0px 20px 32px var(--primary-lighter);
+          background-color: var(--primary-lighter);
+          border-color: var(--primary-main);
+          color: var(--primary-main);
+        }
+      }
+    }
+  }
+}

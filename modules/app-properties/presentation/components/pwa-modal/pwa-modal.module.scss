@@ -1,0 +1,26 @@
+.root {
+  .container {
+    padding: 16px 24px 32px;
+    .imageWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      > * {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .list {
+      > * {
+        align-items: flex-start;
+      }
+      .listDesk {
+        span {
+          font-weight: 700;
+          font-family: arial !important;
+        }
+      }
+    }
+  }
+}

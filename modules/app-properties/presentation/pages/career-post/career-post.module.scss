@@ -1,0 +1,79 @@
+.root {
+  background-color: var(--background-secondary);
+  min-height: 100vh;
+  .buttonIcon {
+    font-size: var(--font-body2);
+  }
+  .banner {
+    position: relative;
+    height: 36vw;
+    max-height: 316px;
+    background: var(--background-secondary)
+      url("../../../../../public/images/career-bg.png") no-repeat center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #1f273d7a;
+      backdrop-filter: blur(2px);
+    }
+    > * {
+      position: relative;
+    }
+    .title {
+      font-size: var(--font-h5);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: var(--font-h6);
+      font-weight: 300;
+    }
+  }
+  .content {
+    .title {
+      font-size: var(--font-h6);
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+    .paragraph {
+      text-align: justify;
+    }
+    .sendButton {
+      margin: 24px 0;
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    background-color: transparent;
+    .banner {
+      .title {
+        font-size: var(--font-h1);
+      }
+      .subtitle {
+        font-size: var(--font-h4);
+      }
+    }
+    .content {
+      .title {
+        font-size: var(--font-h4);
+      }
+      .sendButton {
+        margin: 62px 0;
+        max-width: 275px;
+      }
+    }
+  }
+}

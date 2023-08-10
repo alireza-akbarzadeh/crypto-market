@@ -1,0 +1,43 @@
+.modal {
+
+  .container {
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: -8px 0 16px;
+      .title {
+        font-size: var(--font-h6);
+        font-weight: 500;
+      }
+    }
+    .section {
+      margin-bottom: 32px;
+      .title {
+        font-size: var(--font-h6);
+        margin-bottom: 12px;
+      }
+      .scrollable {
+        overflow: auto;
+        margin: 0 -12px;
+        .chipsContainer {
+          display: flex;
+          padding: 0 8px 8px;
+          .chip {
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            padding: 4px 12px;
+            margin: 0 4px;
+            white-space: nowrap;
+            &.selected {
+              color: var(--primary-main);
+              border-color: var(--primary-main);
+              background-color: var(--primary-lighter);
+            }
+          }
+        }
+      }
+    }
+  }
+}

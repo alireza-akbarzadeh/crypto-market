@@ -1,0 +1,32 @@
+.alertContainer {
+  display: flex;
+  // background: #c9e6ff;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-grow: 1;
+  // color: #001b3f;
+  background: var(--warning-light);
+  justify-content: flex-start;
+  .icon {
+    padding: 12px 16px;
+    display: flex;
+    // background: #8fbde4;
+    background: var(--warning-main);
+  }
+  .content {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    :last-child {
+      margin-inline-start: 16px;
+    }
+  }
+}
+// [data-theme="dark"] .alertContainer {
+//   background: #004b71;
+//   color: #d5e3ff;
+//   .icon {
+//     background: #003956;
+//   }
+// }

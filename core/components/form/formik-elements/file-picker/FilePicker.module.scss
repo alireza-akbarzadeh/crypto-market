@@ -1,0 +1,31 @@
+.fileInput {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  flex-shrink: 1;
+  .fileInputLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    background-color: var(--action-disabledBackground);
+    border-left: 1px solid var(--divider);
+  }
+  .fakeInput {
+    display: flex;
+    align-items: center;
+    .name {
+      width: 100%;
+      overflow: hidden;
+      min-width: 0;
+      text-overflow: ellipsis;
+      &.placeholder {
+        font-size: 0.7em;
+        // font-weight: 700;
+      }
+    }
+  }
+  &:hover .fileInputLabel {
+    border-color: inherit;
+  }
+}

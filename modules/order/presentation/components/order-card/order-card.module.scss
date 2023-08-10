@@ -1,0 +1,128 @@
+.orderCard {
+  height: 206px;
+  margin-bottom: 12px;
+  padding: 0;
+  overflow: hidden;
+  .orderCardButton {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    height: 100%;
+    .topContent {
+      display: flex;
+      align-items: center;
+      .coin {
+        flex: 1 1 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          margin-top: 8px;
+          color: var(--text-secondary);
+        }
+        .value {
+          color: var(--text-secondary);
+          span {
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: var(--font-h6);
+          }
+        }
+      }
+      .icon {
+        color: var(--text-secondary);
+        font-size: 30px;
+        opacity: 0.5;
+      }
+    }
+    .divider {
+      margin: 18px 0;
+    }
+    .bottomContent {
+      display: flex;
+      flex-grow: 1;
+      .info {
+        flex: 1 1 50%;
+        .label {
+          color: var(--text-secondary);
+          margin-bottom: 4px;
+        }
+        .status {
+          border-radius: 40px;
+          padding: 2px 8px;
+        }
+      }
+      .icon {
+        align-self: center;
+        opacity: 0.5;
+      }
+    }
+
+    // .cardTitle {
+    //   display: flex;
+    //   align-content: center;
+    //   padding: 8px;
+    //   flex-wrap: wrap;
+    //   flex: 0 0 35%;
+    //   border-right-width: 6px;
+    //   border-right-style: solid;
+    //   > * {
+    //     margin: 0 0.5ch;
+    //     white-space: nowrap;
+    //   }
+    // }
+    // .cardContent {
+    //   flex: 0 0 65%;
+    //   // align-self: center;
+    //   padding: 8px;
+    //   .cardCoinTitle {
+    //     display: flex;
+    //     .cardCoinContainer {
+    //       width: 20px;
+    //       margin-inline-end: 4px;
+    //     }
+    //   }
+    // }
+  }
+}
+.orderListItem {
+  height: 82px;
+  border-bottom: 1px solid var(--divider);
+  .type {
+    color: var(--text-secondary);
+  }
+  .amount {
+    display: flex;
+    .imageContainer {
+      margin-inline-end: 8px;
+    }
+    .label {
+      margin-inline-start: 8px;
+    }
+  }
+  .value {
+  }
+  .date {
+  }
+  .status {
+    > * {
+      width: 100%;
+    }
+  }
+  .details {
+    .buttonArrow {
+      font-size: 10px;
+    }
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+@media (min-width: 600px) {
+  .orderCard {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+}

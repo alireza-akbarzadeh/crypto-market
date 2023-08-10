@@ -1,0 +1,19 @@
+.footer {
+  padding: 16px 0;
+  .linkList {
+    display: flex;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    .bullet {
+      border-radius: 50%;
+      border: 2px solid;
+      margin: 0 6px;
+    }
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}

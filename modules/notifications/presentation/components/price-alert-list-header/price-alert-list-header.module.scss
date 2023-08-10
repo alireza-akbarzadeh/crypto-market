@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 0;
+  .box {
+    display: flex;
+    align-items: center;
+    .text {
+      padding: 0 12px 0 8px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: var(--font-h6);
+    }
+    .symbol {
+      color: var(--text-secondary);
+    }
+    span {
+      display: inline-block;
+    }
+  }
+  .add {
+    color: var(--primary-main);
+    font-weight: 500;
+    padding: 10px 16px;
+  }
+}

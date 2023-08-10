@@ -1,0 +1,35 @@
+// .codeContainer {
+//   position: relative;
+//   .button {
+//     position: absolute;
+//     left: 0;
+//     top: 68px;
+//   }
+// }
+.root {
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  :global {
+    .MuiFormControl-root {
+      margin-bottom: 16px;
+    }
+  }
+  .codeInput {
+    margin-bottom: 4px;
+  }
+  .buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    .button {
+      font-size: 0.9em;
+      svg {
+        // font-size: 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.root {
+  --mdc-theme-primary: var(--primary-main);
+  // --mdc-ripple-focus-opacity: 0;
+  // --mdc-ripple-hover-opacity: 0;
+  --mdc-typography-button-letter-spacing: 0;
+
+  :global {
+    .mdc-tab {
+      padding-right: 16px;
+      padding-left: 16px;
+      .mdc-tab__text-label {
+        color: var(--text-primary);
+        font-size: var(--font-h6);
+      }
+      &.mdc-tab--active .mdc-tab__text-label {
+        color: var(--primary-main);
+      }
+      .mdc-tab-indicator .mdc-tab-indicator__content--underline {
+        border-top-width: 4px;
+        width: 80%;
+        border-radius: 4px 4px 0px 0px;
+      }
+      // .mdc-tab__ripple {
+      //   border-radius: 8px 8px 0px 0px;
+      // }
+    }
+  }
+}

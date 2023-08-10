@@ -1,0 +1,210 @@
+.modal {
+  .container {
+    .content {
+      position: relative;
+      text-align: justify;
+      .amount {
+        display: flex;
+        margin-bottom: 16px;
+        .name {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          font-weight: 500;
+          .image {
+            margin-inline-end: 8px;
+            display: flex;
+          }
+          &::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: var(--divider);
+            margin: 0 8px;
+          }
+        }
+        .value {
+          direction: ltr;
+          font-weight: 700;
+          span {
+            color: var(--text-secondary);
+            font-weight: 500;
+          }
+        }
+      }
+      .priceHolder {
+        background-color: var(--background-secondary);
+        border-radius: 8px;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        .feeBox {
+          padding: 12px;
+          > * {
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .totalPriceBox {
+        border: 1px solid var(--success-light);
+        background-color: var(--success-lighter);
+        color: var(--success-main);
+        padding: 14px 12px;
+        border-radius: 8px;
+        margin-top: 16px;
+        > * {
+          margin: 0;
+        }
+      }
+      .checkoutAlert {
+        border: 1px solid var(--info-light);
+        border-radius: 8px;
+        margin-top: 16px;
+      }
+      .checkoutBox {
+        border: 1px solid var(--primary-light);
+        background-color: var(--primary-lighter);
+        color: var(--primary-main);
+        padding: 14px 12px;
+        border-radius: 8px;
+        margin-top: 16px;
+        > * {
+          margin: 0;
+        }
+      }
+
+      .buttonWrapper {
+        margin-top: 16px;
+      }
+      // .helperText {
+      //   margin: -4px;
+      //   margin-inline-start: 25px;
+      //   margin-bottom: 12px;
+      // }
+    }
+  }
+}
+@media (max-width: 599px) {
+  .modal {
+    .container {
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: -8px 0 16px;
+        .title {
+          font-size: var(--font-h6);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .modal {
+    overflow: auto;
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 416px;
+      padding: 48px 8px 0;
+      max-width: 100%;
+      max-height: 100%;
+      outline: none;
+
+      .header {
+        position: relative;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        padding: 32px 12px 12px;
+        margin-bottom: 8px;
+        .logoContainer {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 3.7rem;
+          height: 3.7rem;
+          padding: 4px;
+          border-radius: 50%;
+          // box-shadow: 0 0 4px rgb(0 0 0 / 40%);
+          img {
+            border-radius: 50%;
+          }
+        }
+      }
+      .content {
+        background-color: var(--background-paper);
+        padding: 32px;
+        .amount {
+          .name {
+            .image {
+              display: none;
+            }
+          }
+        }
+        .buttonWrapper {
+          display: flex;
+          margin: 16px -4px 0;
+          > * {
+            margin: 0 4px;
+          }
+        }
+        .invoiceFoot {
+          transform: translateY(-1px);
+          position: absolute;
+          top: 100%;
+          right: 0;
+          left: 0;
+          height: 9px;
+          clip-path: polygon(
+            0 0,
+            2.5% 100%,
+            5% 0,
+            7.5% 100%,
+            10% 0,
+            12.5% 100%,
+            15% 0,
+            17.5% 100%,
+            20% 0,
+            22.5% 100%,
+            25% 0,
+            27.5% 100%,
+            30% 0,
+            32.5% 100%,
+            35% 0,
+            37.5% 100%,
+            40% 0,
+            42.5% 100%,
+            45% 0,
+            47.5% 100%,
+            50% 0,
+            52.5% 100%,
+            55% 0,
+            57.5% 100%,
+            60% 0,
+            62.5% 100%,
+            65% 0,
+            67.5% 100%,
+            70% 0,
+            72.5% 100%,
+            75% 0,
+            77.5% 100%,
+            80% 0,
+            82.5% 100%,
+            85% 0,
+            87.5% 100%,
+            90% 0,
+            92.5% 100%,
+            95% 0,
+            97.5% 100%,
+            100% 0
+          );
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.root {
+  z-index: 1100;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px var(--divider) inset;
+
+  :global {
+    .MuiBottomNavigationAction-root {
+      font-weight: 500;
+      &.Mui-selected {
+        box-shadow: 0 2px var(--primary-main) inset;
+        color: var(--primary-main);
+      }
+    }
+  }
+}
+.holder {
+  opacity: 0;
+}
+@media (min-width: 900px) {
+  .root,
+  .holder {
+    display: none;
+  }
+}

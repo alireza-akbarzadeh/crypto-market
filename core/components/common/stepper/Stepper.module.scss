@@ -1,0 +1,89 @@
+.root {
+  display: flex;
+  align-items: center;
+  .itemContainer {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-secondary);
+    &.filled {
+      color: var(--primary-main);
+      .item {
+        border-color: var(--primary-main);
+        .itemText {
+          background-color: var(--primary-main);
+          color: var(--primary-contrastText);
+        }
+      }
+    }
+    &.current {
+      color: var(--primary-main);
+      .item {
+        border-color: var(--primary-main);
+        .itemText {
+          // background-color: var(--background-paper);
+          color: var(--primary-main);
+          box-shadow: 0 0 0 2px var(--primary-main) inset;
+        }
+      }
+    }
+    &.remained {
+      .item {
+        color: var(--text-secondary);
+        .itemText {
+          background-color: var(--action-disabledBackground);
+          color: var(--text-secondary);
+        }
+      }
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::before {
+        content: "";
+        position: absolute;
+        // width: 100%;
+        // left: 50%;
+
+        width: calc(100% - 50px);
+        left: calc(50% + 25px);
+        top: 50%;
+        height: 1px;
+        transform: translateY(-50%);
+        border-top: 1px solid;
+        border-color: inherit;
+      }
+      .itemText {
+        height: 32px;
+        min-width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        margin: 30px 0;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .label {
+      position: absolute;
+      white-space: nowrap;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 8px;
+    }
+    &:nth-child(even) .label {
+      bottom: 8px;
+      top: auto;
+    }
+    &:first-child .item::before {
+      content: none;
+    }
+  }
+  //   .line {
+  //     flex: 1;
+  //   }
+}

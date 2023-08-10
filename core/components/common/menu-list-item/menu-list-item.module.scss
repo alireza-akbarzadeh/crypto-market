@@ -1,0 +1,11 @@
+.listItemButton {
+  height: 46px;
+  padding-right: 12px;
+  padding-left: 12px;
+  .listIcon {
+    min-width: 32px;
+  }
+  .primary {
+    flex-grow: 1;
+  }
+}

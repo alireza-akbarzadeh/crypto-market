@@ -1,0 +1,35 @@
+.root {
+  padding-bottom: 48px;
+  .telegramPaper {
+    border: 1px solid var(--divider);
+    padding: 20px;
+    border-radius: 6px;
+    margin: 16px 0;
+    .desc {
+      margin-bottom: 24px;
+    }
+    .btn {
+      background-color: #2298d5;
+    }
+  }
+  .notificationCategory {
+    .categoryHeader {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      .iconWrapper {
+        width: 36px;
+        height: 36px;
+        margin-inline-end: 8px;
+        display: flex;
+        // padding: 8px;
+        // border-radius: 50%;
+        // background-color: var(--background-secondary);
+        flex-shrink: 0;
+      }
+    }
+    &:not(:last-child) {
+      border-bottom: 8px solid var(--background-secondary);
+    }
+  }
+}

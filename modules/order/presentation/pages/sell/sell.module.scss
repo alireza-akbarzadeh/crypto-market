@@ -1,0 +1,25 @@
+.root {
+  min-height: 100vh;
+  padding-bottom: 64px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0 80px;
+    background-color: var(--background-paper);
+    border-bottom: 1px solid var(--divider);
+  }
+}
+
+@media (min-width: 600px) {
+  .root {
+    .stepperWrapper {
+      background-color: var(--background-paper);
+      border: 1px solid var(--divider);
+      padding: 0 48px;
+      border-radius: 12px;
+      margin-top: -54px;
+      margin-bottom: 32px;
+    }
+  }
+}

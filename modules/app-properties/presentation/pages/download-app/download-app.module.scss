@@ -1,0 +1,56 @@
+.root {
+  min-height: 100vh;
+  .alert {
+    display: inline-flex;
+    border-color: var(--primary-main);
+    margin-top: 24px;
+    background: var(--primary-lighter);
+    border: 1px solid var(--primary-light);
+    border-radius: 8px;
+    padding: 2px 12px;
+    font-weight: 700;
+  }
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--background-secondary)
+      url("../../../../../public/images/orders-bg.png") no-repeat bottom right;
+    background-size: cover;
+  }
+  .headerLogoContainer {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    position: relative;
+    .paper {
+      margin: 16px 0;
+      background-color: var(--background-paper);
+      padding: 12px;
+      box-shadow: 0px 40px 72px rgba(179, 179, 179, 0.08);
+      border-radius: 16px;
+    }
+  }
+}
+@media (min-width: 600px) {
+  .root {
+    .container {
+      .paper {
+        padding: 32px 32px 80px;
+        margin: 64px 0 32px;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+}

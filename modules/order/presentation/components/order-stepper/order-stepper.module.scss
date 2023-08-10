@@ -1,0 +1,25 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  padding: 30px 0 36px;
+  .divider {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    flex-grow: 1;
+  }
+  .iconWrapper {
+    position: relative;
+    border-style: solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title {
+      position: absolute;
+      white-space: nowrap;
+      top: 100%;
+    }
+  }
+}

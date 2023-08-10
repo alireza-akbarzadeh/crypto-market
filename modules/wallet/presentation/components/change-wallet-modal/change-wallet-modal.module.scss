@@ -1,0 +1,13 @@
+.root {
+  z-index: 1300;
+  .paper {
+    .addButton {
+      padding: 16px;
+      width: 100%;
+      margin: 0 0 8px;
+    }
+    .submit {
+      margin-top: 16px;
+    }
+  }
+}

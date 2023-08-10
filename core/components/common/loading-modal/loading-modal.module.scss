@@ -1,0 +1,21 @@
+.paper {
+  //   border-radius: 20px !important;
+  padding: 24px 12px;
+  text-align: center;
+  position: relative;
+  margin: 24px !important;
+  width: calc(100% - 48px) !important;
+  max-width: 328px !important;
+  user-select: none;
+  .imageWrapper {
+    align-self: center;
+    margin-bottom: -4px;
+  }
+  .title {
+    margin-top: 16px;
+    font-weight: 600;
+  }
+  .defaultMessage {
+    margin-top: 4px;
+  }
+}

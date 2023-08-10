@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 43 42" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 16</title>
+<defs>
+<ellipse id="aj" cx="37.919" cy="16.243" rx="2.9736" ry="3.048"/>
+<filter id="bo" x="-25.2%" y="-24.6%" width="150.4%" height="149.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="y" cx="36.379" cy="9.3046" rx="2.4301" ry="2.4908"/>
+<filter id="bd" x="-30.9%" y="-30.1%" width="161.7%" height="160.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="n" cx="32.643" cy="4.4444" rx="1.7266" ry="1.7698"/>
+<filter id="as" x="-43.4%" y="-42.4%" width="186.9%" height="184.8%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="c" cx="28.48" cy="1.8225" rx="1.0232" ry="1.0815"/>
+<filter id="ak" x="-73.3%" y="-69.3%" width="246.6%" height="238.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="a" cx="25.236" cy=".83133" rx="1" ry="1"/>
+<filter id="bt" x="-93.8%" y="-95.4%" width="287.6%" height="290.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="ai" cx="36.379" cy="23.181" rx="2.4301" ry="2.4908"/>
+<filter id="bs" x="-30.9%" y="-30.1%" width="161.7%" height="160.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="ah" cx="32.643" cy="28.042" rx="1.7266" ry="1.7698"/>
+<filter id="br" x="-43.4%" y="-42.4%" width="186.9%" height="184.8%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="ag" cx="28.48" cy="30.663" rx="1.0232" ry="1.0815"/>
+<filter id="bq" x="-73.3%" y="-69.3%" width="246.6%" height="238.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="af" cx="25.236" cy="31.655" rx="1" ry="1"/>
+<filter id="bp" x="-93.8%" y="-95.4%" width="287.6%" height="290.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="ae" cx="16.649" cy="2.9736" rx="3.048" ry="2.9736"/>
+<filter id="bn" x="-24.6%" y="-25.2%" width="149.2%" height="150.4%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="ad" cx="23.761" cy="4.4764" rx="2.4908" ry="2.4301"/>
+<filter id="bm" x="-30.1%" y="-30.9%" width="160.2%" height="161.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="ac" cx="28.743" cy="8.1215" rx="1.7698" ry="1.7266"/>
+<filter id="bl" x="-42.4%" y="-43.4%" width="184.8%" height="186.9%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="ab" cx="31.43" cy="12.182" rx="1.0488" ry="1.0552"/>
+<filter id="bk" x="-71.5%" y="-71.1%" width="243%" height="242.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="aa" cx="32.446" cy="15.348" rx="1" ry="1"/>
+<filter id="bj" x="-91.5%" y="-97.7%" width="283.1%" height="295.5%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="z" cx="9.5372" cy="4.4764" rx="2.4908" ry="2.4301"/>
+<filter id="bi" x="-30.1%" y="-30.9%" width="160.2%" height="161.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="x" cx="4.5556" cy="8.1215" rx="1.7698" ry="1.7266"/>
+<filter id="bh" x="-42.4%" y="-43.4%" width="184.8%" height="186.9%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="w" cx="1.8681" cy="12.182" rx="1.0488" ry="1.0552"/>
+<filter id="bg" x="-71.5%" y="-71.1%" width="243%" height="242.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="v" cx=".85212" cy="15.348" rx="1" ry="1"/>
+<filter id="bf" x="-91.5%" y="-97.7%" width="283.1%" height="295.5%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="u" cx="3.048" cy="23.789" rx="2.9736" ry="3.048"/>
+<filter id="be" x="-25.2%" y="-24.6%" width="150.4%" height="149.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="t" cx="4.5883" cy="16.851" rx="2.4301" ry="2.4908"/>
+<filter id="bc" x="-30.9%" y="-30.1%" width="161.7%" height="160.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="s" cx="8.3245" cy="11.99" rx="1.7266" ry="1.7698"/>
+<filter id="bb" x="-43.4%" y="-42.4%" width="186.9%" height="184.8%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="r" cx="12.487" cy="9.3685" rx="1.0488" ry="1.0552"/>
+<filter id="ba" x="-71.5%" y="-71.1%" width="243%" height="242.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="q" cx="15.731" cy="8.3773" rx="1" ry="1"/>
+<filter id="az" x="-93.8%" y="-95.4%" width="287.6%" height="290.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="p" cx="4.5883" cy="30.727" rx="2.4301" ry="2.4908"/>
+<filter id="ay" x="-30.9%" y="-30.1%" width="161.7%" height="160.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="o" cx="8.3245" cy="35.588" rx="1.7266" ry="1.7698"/>
+<filter id="ax" x="-43.4%" y="-42.4%" width="186.9%" height="184.8%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="m" cx="12.487" cy="38.209" rx="1.0232" ry="1.0815"/>
+<filter id="aw" x="-73.3%" y="-69.3%" width="246.6%" height="238.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="l" cx="15.731" cy="39.201" rx="1" ry="1"/>
+<filter id="av" x="-93.8%" y="-95.4%" width="287.6%" height="290.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="k" cx="24.384" cy="36.994" rx="3.048" ry="2.9736"/>
+<filter id="au" x="-24.6%" y="-25.2%" width="149.2%" height="150.4%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="j" cx="31.496" cy="35.492" rx="2.4908" ry="2.4301"/>
+<filter id="at" x="-30.1%" y="-30.9%" width="160.2%" height="161.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="i" cx="36.477" cy="31.847" rx="1.7698" ry="1.7266"/>
+<filter id="ar" x="-42.4%" y="-43.4%" width="184.8%" height="186.9%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="h" cx="39.165" cy="27.786" rx="1.0488" ry="1.0552"/>
+<filter id="aq" x="-71.5%" y="-71.1%" width="243%" height="242.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="g" cx="40.181" cy="24.62" rx="1" ry="1"/>
+<filter id="ap" x="-91.5%" y="-97.7%" width="283.1%" height="295.5%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="f" cx="17.272" cy="35.492" rx="2.4908" ry="2.4301"/>
+<filter id="ao" x="-30.1%" y="-30.9%" width="160.2%" height="161.7%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="e" cx="12.29" cy="31.847" rx="1.7698" ry="1.7266"/>
+<filter id="an" x="-42.4%" y="-43.4%" width="184.8%" height="186.9%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="d" cx="9.6027" cy="27.786" rx="1.0488" ry="1.0552"/>
+<filter id="am" x="-71.5%" y="-71.1%" width="243%" height="242.2%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+<ellipse id="b" cx="8.5867" cy="24.62" rx="1" ry="1"/>
+<filter id="al" x="-91.5%" y="-97.7%" width="283.1%" height="295.5%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="0.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+</filter>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-55 -57)">
+<g transform="translate(56 58)">
+<g id="Oval" transform="translate(37.919 16.243) scale(1 -1) rotate(90) translate(-37.919 -16.243)">
+<use fill="black" filter="url(#bo)" xlink:href="#aj"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#aj"/>
+</g>
+<g id="Oval" transform="translate(36.379 9.3046) scale(1 -1) rotate(90) translate(-36.379 -9.3046)">
+<use fill="black" filter="url(#bd)" xlink:href="#y"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#y"/>
+</g>
+<g id="Oval" transform="translate(32.643 4.4444) scale(1 -1) rotate(90) translate(-32.643 -4.4444)">
+<use fill="black" filter="url(#as)" xlink:href="#n"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#n"/>
+</g>
+<g id="Oval" transform="translate(28.48 1.8225) scale(1 -1) rotate(90) translate(-28.48 -1.8225)">
+<use fill="black" filter="url(#ak)" xlink:href="#c"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#c"/>
+</g>
+<g id="Oval" transform="translate(25.236 .83134) scale(1 -1) rotate(90) translate(-25.236 -.83134)">
+<use fill="black" filter="url(#bt)" xlink:href="#a"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#a"/>
+</g>
+<g id="Oval" transform="translate(36.379 23.181) scale(-1) rotate(90) translate(-36.379 -23.181)">
+<use fill="black" filter="url(#bs)" xlink:href="#ai"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#ai"/>
+</g>
+<g id="Oval" transform="translate(32.643 28.042) scale(-1) rotate(90) translate(-32.643 -28.042)">
+<use fill="black" filter="url(#br)" xlink:href="#ah"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#ah"/>
+</g>
+<g id="Oval" transform="translate(28.48 30.663) scale(-1) rotate(90) translate(-28.48 -30.663)">
+<use fill="black" filter="url(#bq)" xlink:href="#ag"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#ag"/>
+</g>
+<g id="Oval" transform="translate(25.236 31.655) scale(-1) rotate(90) translate(-25.236 -31.655)">
+<use fill="black" filter="url(#bp)" xlink:href="#af"/>
+<use fill="#EB4137" fill-rule="evenodd" xlink:href="#af"/>
+</g>
+<g id="Oval">
+<use fill="black" filter="url(#bn)" xlink:href="#ae"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#ae"/>
+</g>
+<g id="Oval">
+<use fill="black" filter="url(#bm)" xlink:href="#ad"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#ad"/>
+</g>
+<g id="Oval">
+<use fill="black" filter="url(#bl)" xlink:href="#ac"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#ac"/>
+</g>
+<g id="Oval-2">
+<use fill="black" filter="url(#bk)" xlink:href="#ab"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#ab"/>
+</g>
+<g id="Oval">
+<use fill="black" filter="url(#bj)" xlink:href="#aa"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#aa"/>
+</g>
+<g id="Oval" transform="translate(9.5372 4.4764) scale(-1 1) translate(-9.5372 -4.4764)">
+<use fill="black" filter="url(#bi)" xlink:href="#z"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#z"/>
+</g>
+<g id="Oval" transform="translate(4.5556 8.1215) scale(-1 1) translate(-4.5556 -8.1215)">
+<use fill="black" filter="url(#bh)" xlink:href="#x"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#x"/>
+</g>
+<g id="Oval" transform="translate(1.8681 12.182) scale(-1 1) translate(-1.8681 -12.182)">
+<use fill="black" filter="url(#bg)" xlink:href="#w"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#w"/>
+</g>
+<g id="Oval" transform="translate(.85212 15.348) scale(-1 1) translate(-.85212 -15.348)">
+<use fill="black" filter="url(#bf)" xlink:href="#v"/>
+<use fill="#2385FD" fill-rule="evenodd" xlink:href="#v"/>
+</g>
+<g id="Oval" transform="translate(3.048 23.789) scale(-1) rotate(90) translate(-3.048 -23.789)">
+<use fill="black" filter="url(#be)" xlink:href="#u"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#u"/>
+</g>
+<g id="Oval" transform="translate(4.5883 16.851) scale(-1) rotate(90) translate(-4.5883 -16.851)">
+<use fill="black" filter="url(#bc)" xlink:href="#t"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#t"/>
+</g>
+<g id="Oval" transform="translate(8.3245 11.99) scale(-1) rotate(90) translate(-8.3245 -11.99)">
+<use fill="black" filter="url(#bb)" xlink:href="#s"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#s"/>
+</g>
+<g id="bv" transform="translate(12.487 9.3685) scale(-1) rotate(90) translate(-12.487 -9.3685)">
+<use fill="black" filter="url(#ba)" xlink:href="#r"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#r"/>
+</g>
+<g id="Oval" transform="translate(15.731 8.3773) scale(-1) rotate(90) translate(-15.731 -8.3773)">
+<use fill="black" filter="url(#az)" xlink:href="#q"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#q"/>
+</g>
+<g id="Oval" transform="translate(4.5883 30.727) scale(1 -1) rotate(90) translate(-4.5883 -30.727)">
+<use fill="black" filter="url(#ay)" xlink:href="#p"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#p"/>
+</g>
+<g id="Oval" transform="translate(8.3245 35.588) scale(1 -1) rotate(90) translate(-8.3245 -35.588)">
+<use fill="black" filter="url(#ax)" xlink:href="#o"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#o"/>
+</g>
+<g id="Oval" transform="translate(12.487 38.209) scale(1 -1) rotate(90) translate(-12.487 -38.209)">
+<use fill="black" filter="url(#aw)" xlink:href="#m"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#m"/>
+</g>
+<g id="Oval" transform="translate(15.731 39.201) scale(1 -1) rotate(90) translate(-15.731 -39.201)">
+<use fill="black" filter="url(#av)" xlink:href="#l"/>
+<use fill="#FFBA37" fill-rule="evenodd" xlink:href="#l"/>
+</g>
+<g id="Oval" transform="translate(24.384 36.994) scale(1 -1) translate(-24.384 -36.994)">
+<use fill="black" filter="url(#au)" xlink:href="#k"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#k"/>
+</g>
+<g id="Oval" transform="translate(31.496 35.492) scale(1 -1) translate(-31.496 -35.492)">
+<use fill="black" filter="url(#at)" xlink:href="#j"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#j"/>
+</g>
+<g id="Oval" transform="translate(36.477 31.847) scale(1 -1) translate(-36.477 -31.847)">
+<use fill="black" filter="url(#ar)" xlink:href="#i"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#i"/>
+</g>
+<g transform="translate(39.165 27.786) scale(1 -1) translate(-39.165 -27.786)">
+<use fill="black" filter="url(#aq)" xlink:href="#h"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#h"/>
+</g>
+<g id="Oval" transform="translate(40.181 24.62) scale(1 -1) translate(-40.181 -24.62)">
+<use fill="black" filter="url(#ap)" xlink:href="#g"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#g"/>
+</g>
+<g id="Oval" transform="translate(17.272 35.492) scale(-1) translate(-17.272 -35.492)">
+<use fill="black" filter="url(#ao)" xlink:href="#f"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#f"/>
+</g>
+<g id="Oval" transform="translate(12.29 31.847) scale(-1) translate(-12.29 -31.847)">
+<use fill="black" filter="url(#an)" xlink:href="#e"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#e"/>
+</g>
+<g id="bu" transform="translate(9.6027 27.786) scale(-1) translate(-9.6027 -27.786)">
+<use fill="black" filter="url(#am)" xlink:href="#d"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#d"/>
+</g>
+<g transform="translate(8.5867 24.62) scale(-1) translate(-8.5867 -24.62)">
+<use fill="black" filter="url(#al)" xlink:href="#b"/>
+<use fill="#34A853" fill-rule="evenodd" xlink:href="#b"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

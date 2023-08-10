@@ -1,0 +1,103 @@
+.root {
+  min-height: 100vh;
+  padding: 0 0 32px;
+  .paper {
+    padding: 12px;
+    position: relative;
+    .header {
+      .mainDesk {
+        text-align: justify;
+        .title {
+          display: none;
+          font-weight: 700;
+        }
+      }
+      .headImageWrapper {
+        width: 70%;
+        max-width: 300px;
+        margin: auto;
+      }
+    }
+    .alert {
+      margin-bottom: 24px;
+      p {
+        margin: 0;
+      }
+    }
+    .textarea {
+      background-color: var(--background-secondary);
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      .button {
+        width: 100%;
+      }
+    }
+  }
+  .listTitle {
+    font-size: var(--font-h6);
+    font-weight: 700;
+    margin: 32px 0 12px;
+  }
+  .cardWrapper {
+    padding-bottom: 8px;
+  }
+}
+@media (min-width: 900px) {
+  .root {
+    background-color: var(--background-secondary);
+    padding: 72px 0;
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--background-secondary)
+        url("../../../../../public/images/live-price-bg.png") no-repeat center;
+      background-size: cover;
+    }
+    .pageHeader {
+      box-shadow: none;
+      background-color: var(--background-secondary);
+    }
+    .paper {
+      background-color: var(--background-paper);
+
+      box-shadow: 0px 40px 72px rgba(179, 179, 179, 0.08);
+      border-radius: 16px;
+      padding: 56px 110px;
+      .header {
+        display: flex;
+        align-items: center;
+        .mainDesk {
+          text-align: unset;
+          margin-inline-end: 64px;
+          .title {
+            display: block;
+            margin-bottom: 12px;
+          }
+        }
+        .headImageWrapper {
+          order: 1;
+          width: 40%;
+          max-width: 400px;
+          flex-shrink: 0;
+          margin: auto;
+        }
+      }
+      .buttonContainer {
+        .button {
+          min-width: 174px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

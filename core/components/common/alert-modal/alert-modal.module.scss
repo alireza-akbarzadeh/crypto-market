@@ -1,0 +1,63 @@
+.root .paper {
+  padding: 40px 26px;
+  text-align: center;
+  .icon {
+    font-size: 50px;
+  }
+  .imageWrapper {
+    align-self: center;
+    margin-bottom: -4px;
+  }
+  .close {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .title {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .defaultMessage {
+    margin-top: 16px;
+    text-align: justify;
+  }
+  .action {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  .actionButton {
+    flex: 1;
+    margin: 0 6px;
+  }
+  .singleActionButton {
+    min-width: 136px;
+  }
+}
+@media (min-width: 600px) {
+  .root .paper {
+    border-radius: 20px !important;
+    position: relative;
+    margin: 24px !important;
+    width: calc(100% - 48px) !important;
+    max-width: 390px;
+  }
+}
+@media (max-width: 599px) {
+  .root {
+    z-index: 1300;
+    .paper {
+      padding: 24px 12px;
+      border-radius: 20px 20px 0 0 !important;
+
+      .close {
+        display: none;
+      }
+      .actionButton {
+        flex: 1;
+        margin: 2px;
+      }
+    }
+  }
+}
