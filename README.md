@@ -1,127 +1,53 @@
-# توضیحات پوشه ها و فایل ها
+# CryptoX Website
 
-## .fttemplates/
+CryptoX is a dynamic and interactive cryptocurrency website built using Next.js and Socket.IO to provide real-time updates and a seamless user experience.
 
-این پوشه شامل تمپلیت های استفاده شده در پروژه برای ساختن ماژول، صفحه و کامپوننت میباشد.
-برای استفاده از این ویژگی، باید افزونه [Folder Templates](https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure) را نصب کنید.
+## Table of Contents
 
-## @types/
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributions](#contributions)
 
-این پوشه برای نادیده گرفتن تایپ‌های پکیج‌هایی ایجاد شده که برای آنها تایپی تعریف نشده.
+## Introduction
 
-## core/
+CryptoX is a modern and engaging cryptocurrency website that offers real-time information and updates on various cryptocurrencies. Whether you're an investor, trader, or simply curious about the crypto market, CryptoX provides a user-friendly interface to stay informed and make informed decisions.
 
-این پوشه شامل همه چیز هایی است که در کل پروژه از آنها استفاده شده.
+## Features
 
-### core/components
+- **Real-time Updates:** Utilizing Socket.IO, CryptoX provides live updates on cryptocurrency prices, market trends, and other relevant data.
 
-کامپوننت های مشترک اپلیکیشن در سه پوشه دسته بندی شدند.
+- **Interactive Charts:** Visualize the performance of different cryptocurrencies over time through interactive and responsive charts.
 
-- form:‌ کامپوننت های فرم
-- layout: کامپوننت های مربوط به بخش های اصلی هر صفحه
-- common: کامپوننت هایی که در دو دسته بالا قرار نمیگیرند.
+- **User Profiles:** Create personalized user profiles to track favorite cryptocurrencies, set alerts, and manage preferences.
 
-### core/constants
+- **News and Insights:** Stay informed with the latest news and insights from the cryptocurrency world, curated to provide valuable information.
 
-مقادیر ثابت اپلیکیشن در این پوشه قرار میگیرند.
+## Technologies
 
-### core/enums
+- Next.js: A React framework for building server-rendered applications, enabling efficient and dynamic frontend development.
 
-### core/helpers
+- Socket.IO: A library that enables real-time, bidirectional communication between the server and the clients.
 
-فانکشن های کمک کننده در این پوشه هستند.
+- JavaScript/TypeScript: The primary programming languages used for developing the website's frontend and backend functionality.
 
-### core/hooks
+- CSS/SCSS: Styles are designed using CSS and SCSS for a visually appealing and responsive user interface.
 
-شامل کاستوم هوک های استفاده شده در اپلیکیشن.
+## Installation
 
-### core/http
+1. Clone the repository: `git clone [repository-url]`
+2. Navigate to the project directory: `cd Crypto-market`
+3. Install dependencies: `yarn`
 
-تمام درخواست‌ها از این فایل استفاده میکنند.
+## Usage
 
-### core/localization
+1. Start the development server: `npm run dev`
+2. Open your browser and navigate to `http://localhost:3000` to access the CryptoX website.
 
-این فایل برای متمرکز کردن جملات استفاده شده در اپ و پیاده سازی چند زبانه کردن در آینده ساخته شده. (ولی فعلا فقط حاوی تیترهای صفحه‌های برنامه میباشد.)
+## Contributions
 
-### core/redux
+Contributions to CryptoX are welcome! If you encounter any bugs, have feature suggestions, or would like to contribute code, please feel free to submit a pull request.
 
-استور اصلی اپ در این پوشه قرار دارد.
-
-### core/styles
-
-شامل استایل‌های گلوبال اپ.
-
-### core/theme
-
-شامل تنظیمات تم و متغیر‌های استایل میباشد.
-
-## cypress/
-
-⛔️ این پوشه توسط [cypress](https://www.cypress.io/) ساخته شده. آن را تغییر ندهید.
-
-## docker/
-
-برخی تنظیمات داکر در این پوشه قرار دارد.
-
-## modules/
-
-تمامی [ماژول‌ها](#ماژول)، شامل [صفحه‌ها](#صفحه)، [کامپوننت‌ها](#کامپوننت)، استور‌ها و ارتباطات با سرور در این پوشه قرار دارد.
-
-## pages/
-
-تمامی آدرس‌ها در این پوشه قرار میگیرند. هر صفحه در این پوشه، به یک [صفحه](#صفحه) در یک [ماژول](#ماژول) متصل است.
-
-## public/
-
-این پوشه شامل فایل‌های عمومی پروژه از قبیل عکس، فونت و آیکون‌ها میباشد.
-
-# ماژول
-
-هر ماژول نشان دهنده یک عملکرد در پروژه است.هر ماژول شامل سه لایه میباشد:
-
-- data
-  - datasources
-  - model
-- domain
-  - entities
-  - usecases
-- presentation
-  - components
-  - pages
-  - redux
-
-### \[module\]/data
-
-این لایه شامل api call هایی است که به این ماژول مربوط است. این درخواست ها در فایل \[module\].datasource.ts قرار میگیرند و فانکشن هایی که مقادیر دریافتی را به متغیر های استفاده شده در اپلیکیشن تبدیل میکنند در پوشه model/ قرار میگیرند.
-
-### \[module\]/domain
-
-این لایه شامل تایپ ها در پوشه entities/ و لایه میانی برای تغییرات درخواست‌ها مربوط به اپ در پوشه usecases/ میباشد.
-
-### \[module\]/presentation
-
-این لایه شامل اجزای قابل نمایش در برنامه میباشد؛ که شامل سه بخش کامپوننت‌ها، صفحه‌ها و استور مربوط به این ماژول میباشد.
-
-هر ماژول توسط [ftTemplate](#ساخت-پوشه-از-پیش-تعریف-شده) ساخته میشود.
-
-# کامپوننت
-
-هر کامپوننت در اپ، شامل سه فایل میباشد:
-
-- index.tsx (حاوی تمام لاجیک های یک کامپوننت)
-- \[COMPONENT_NAME\].view.tsx (حاوی تگ ها و بخش نمایش کامپوننت)
-- \[COMPONENT_NAME\].module.scss (استایل‌های مربوط به کامپوننت)
-
-هر کامپوننت توسط [ftTemplate](#ساخت-پوشه-از-پیش-تعریف-شده) ساخته میشود.
-
-# صفحه
-
-هر صفحه در یک ماژول نوعی کامپوننت است که توسط [ftTemplate](#ساخت-پوشه-از-پیش-تعریف-شده) ساخته میشود.
-
-# ساخت پوشه از پیش تعریف شده
-
-برای ساخت هر ماژول، کامپوننت و صفحه در ماژول، ابتدا باید افزونه [Folder Templates](https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure) را روی vsCode نصب داشته باشید.
-
-- روی پوشه مورد نظر (به عنوان مثال برای ساخت ماژول روی پوشه modules/) کلیک راست میکنیم.
-- ساختار مورد نظر را انتخاب میکنیم.
-- نام ساختار رو وارد میکنیم. نام میتواند به هر صورت (fName, f_name, f-name, ...) باشد.
+Stay up-to-date with the crypto market and make informed decisions with CryptoX. Experience real-time updates and interactive features today!
